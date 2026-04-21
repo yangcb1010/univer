@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'Смена режимов отображения и настройка эффекта отображения.',
         others: 'Другие',
         othersDesc: 'Другие функции и настройки.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'Больше',
     },
     fontFamily: {

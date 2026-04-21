@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'تغییر حالت نمایش و تنظیم اثرات نمایشی.',
         others: 'دیگر',
         othersDesc: 'سایر عملکردها و تنظیمات.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'بیشتر',
     },
     fontFamily: {

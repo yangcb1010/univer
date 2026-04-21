@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'Prepínajte režimy zobrazenia a upravte efekt zobrazenia.',
         others: 'Ostatné',
         othersDesc: 'Ďalšie funkcie a nastavenia.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'Viac',
     },
     fontFamily: {

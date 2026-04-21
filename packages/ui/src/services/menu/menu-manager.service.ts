@@ -34,6 +34,7 @@ export interface IMenuSchema {
     children?: IMenuSchema[];
     quickLayout?: ContextMenuQuickLayout;
     tiny?: boolean;
+    contextual?: boolean;
 }
 
 export interface IMenuManagerService {
@@ -42,6 +43,8 @@ export interface IMenuManagerService {
     mergeMenu(source: MenuSchemaType, target?: MenuSchemaType): void;
 
     appendRootMenu(source: MenuSchemaType): void;
+
+    appendMenuByPositionKey(position: string, source: MenuSchemaType): void;
 
     getMenuByPositionKey(position: string): IMenuSchema[];
 
@@ -53,6 +56,7 @@ export type MenuSchemaType = {
     menuItemFactory?: (accessor: IAccessor) => IMenuItem;
     title?: string;
     quickLayout?: ContextMenuQuickLayout;
+    contextual?: boolean;
 } | {
     [key: string]: MenuSchemaType;
 };
@@ -275,6 +279,34 @@ export class MenuManagerService extends Disposable implements IMenuManagerServic
         this.menuChanged$.next();
     }
 
+    appendMenuByPositionKey(position: string, source: MenuSchemaType): void {
+        const targetObj = this._findMenuObjectByKey(position);
+        if (targetObj) {
+            targetObj[position] = merge({}, targetObj[position], source);
+            this.menuChanged$.next();
+        } else {
+            this.appendRootMenu({ [position]: source });
+        }
+    }
+
+    private _findMenuObjectByKey(key: string): any {
+        const find = (obj: any): any => {
+            if (key in obj) {
+                return obj;
+            }
+            for (const k in obj) {
+                if (typeof obj[k] === 'object' && !Array.isArray(obj[k])) {
+                    const result = find(obj[k]);
+                    if (result) {
+                        return result;
+                    }
+                }
+            }
+            return null;
+        };
+        return find(this._menu);
+    }
+
     private _buildMenuSchema(data: MenuSchemaType): IMenuSchema[] {
         const result: IMenuSchema[] = [];
 
@@ -284,6 +316,7 @@ export class MenuManagerService extends Disposable implements IMenuManagerServic
                 order: value.order,
                 title: value.title,
                 quickLayout: value.quickLayout,
+                contextual: value.contextual,
             };
 
             if (value.menuItemFactory) {

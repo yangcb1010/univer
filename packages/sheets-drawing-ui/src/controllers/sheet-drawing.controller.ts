@@ -15,7 +15,7 @@
  */
 
 import { Disposable, ICommandService, Inject } from '@univerjs/core';
-import { ComponentManager, IMenuManagerService, IShortcutService } from '@univerjs/ui';
+import { ComponentManager, IMenuManagerService, IShortcutService, RibbonContextualGroup } from '@univerjs/ui';
 import { DeleteDrawingsCommand } from '../commands/commands/delete-drawings.command';
 import { FlipSheetDrawingCommand } from '../commands/commands/flip-drawings.command';
 import { GroupSheetDrawingCommand } from '../commands/commands/group-sheet-drawing.command';
@@ -25,6 +25,7 @@ import { SaveCellImagesCommand } from '../commands/commands/save-cell-images.com
 import { UngroupSheetDrawingCommand } from '../commands/commands/ungroup-sheet-drawing.command';
 import { EditSheetDrawingOperation } from '../commands/operations/edit-sheet-drawing.operation';
 import { SidebarSheetDrawingOperation } from '../commands/operations/open-drawing-panel.operation';
+import { DRAWING_FORMAT_RIBBON_TAB_KEY, DrawingFormatTabMenuItemFactory } from '../menu/drawing-format.schema';
 import { menuSchema } from '../menu/schema';
 import { BATCH_SAVE_IMAGES_DIALOG_ID, BatchSaveImagesDialog } from '../views/batch-save-images';
 import { COMPONENT_SHEET_DRAWING_PANEL } from '../views/sheet-image-panel/component-name';
@@ -51,6 +52,22 @@ export class SheetDrawingUIController extends Disposable {
 
     private _initMenus(): void {
         this._menuManagerService.mergeMenu(menuSchema);
+        this._menuManagerService.appendMenuByPositionKey('ribbon', {
+            [DRAWING_FORMAT_RIBBON_TAB_KEY]: {
+                order: 10,
+                contextual: true,
+                menuItemFactory: DrawingFormatTabMenuItemFactory,
+                [RibbonContextualGroup.ADJUST]: {
+                    order: 0,
+                },
+                [RibbonContextualGroup.ARRANGE]: {
+                    order: 1,
+                },
+                [RibbonContextualGroup.FORMAT]: {
+                    order: 2,
+                },
+            },
+        });
     }
 
     private _initCommands() {

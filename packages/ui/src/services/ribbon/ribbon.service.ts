@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Observable } from 'rxjs';
+import type { Observable, Subscription } from 'rxjs';
 import type { IMenuSchema } from '../menu/menu-manager.service';
 import { createIdentifier, Disposable, IUniverInstanceService } from '@univerjs/core';
 import { BehaviorSubject, combineLatest } from 'rxjs';
@@ -48,6 +48,9 @@ export class DesktopRibbonService extends Disposable implements IRibbonService {
     private readonly _fakeToolbarVisible$ = new BehaviorSubject<boolean>(false);
     readonly fakeToolbarVisible$ = this._fakeToolbarVisible$.asObservable();
 
+    private _previousNonContextualTab: string = RibbonPosition.START;
+    private _hiddenSubscription: Subscription | null = null;
+
     constructor(
         @IMenuManagerService private readonly _menuManagerService: IMenuManagerService,
         @IUniverInstanceService private readonly _univerInstanceService: IUniverInstanceService
@@ -80,19 +83,35 @@ export class DesktopRibbonService extends Disposable implements IRibbonService {
     }
 
     private _updateRibbon() {
+        const previousRibbon = this._ribbon$.getValue();
         const ribbon = this._menuManagerService.getMenuByPositionKey(MenuManagerPosition.RIBBON);
 
-        // Collect all hidden$ Observables and their corresponding paths
+        // Collect all hidden$ Observables and their corresponding paths at all levels
         const hiddenObservableMap: Observable<boolean>[] = [];
         const hiddenKeyMap: string[] = [];
-        for (const group of ribbon) {
-            if (group.children) {
-                for (const item of group.children) {
-                    if (item.children) {
-                        for (const child of item.children) {
+        const hiddenLevelMap: ('tab' | 'group' | 'child')[] = [];
+
+        for (const tab of ribbon) {
+            if (tab.item?.hidden$) {
+                hiddenObservableMap.push(tab.item.hidden$);
+                hiddenKeyMap.push(tab.key);
+                hiddenLevelMap.push('tab');
+            }
+
+            if (tab.children) {
+                for (const group of tab.children) {
+                    if (group.item?.hidden$) {
+                        hiddenObservableMap.push(group.item.hidden$);
+                        hiddenKeyMap.push(group.key);
+                        hiddenLevelMap.push('group');
+                    }
+
+                    if (group.children) {
+                        for (const child of group.children) {
                             if (child.item?.hidden$) {
                                 hiddenObservableMap.push(child.item.hidden$);
                                 hiddenKeyMap.push(child.key);
+                                hiddenLevelMap.push('child');
                             }
                         }
                     }
@@ -100,57 +119,112 @@ export class DesktopRibbonService extends Disposable implements IRibbonService {
             }
         }
 
+        // Clean up previous continuous subscription
+        this._hiddenSubscription?.unsubscribe();
+        this._hiddenSubscription = null;
+
         if (hiddenObservableMap.length === 0) {
             this._ribbon$.next(ribbon);
+            this._ensureActivatedTab(ribbon, previousRibbon);
             return;
         }
 
-        // Only get the current value once, not continuously subscribe
-        combineLatest(hiddenObservableMap)
-            .pipe(startWith(new Array(hiddenObservableMap.length).fill(false)))
-            .subscribe((hiddenMap) => {
-                const newRibbon: IMenuSchema[] = [];
+        this._hiddenSubscription = combineLatest(hiddenObservableMap).subscribe((hiddenMap) => {
+            const hiddenTabKeys = new Set<string>();
+            const hiddenGroupKeys = new Set<string>();
+            const hiddenChildKeys = new Set<string>();
 
-                const hiddenPathMap = hiddenMap.map((hidden, index) => {
-                    if (hidden) {
-                        return hiddenKeyMap[index];
+            hiddenMap.forEach((hidden, index) => {
+                if (hidden) {
+                    const level = hiddenLevelMap[index];
+                    const key = hiddenKeyMap[index];
+
+                    if (level === 'tab') {
+                        hiddenTabKeys.add(key);
+                    } else if (level === 'group') {
+                        hiddenGroupKeys.add(key);
+                    } else if (level === 'child') {
+                        hiddenChildKeys.add(key);
                     }
-                    return null;
-                }).filter((item) => !!item) as string[];
+                }
+            });
 
-                for (const group of ribbon) {
-                    const newGroup: IMenuSchema = { ...group, children: [] };
+            const newRibbon: IMenuSchema[] = [];
 
-                    if (group.children?.length) {
-                        for (const item of group.children) {
-                            const newItem: IMenuSchema = { ...item, children: [] };
-                            let shouldAddItem = true;
+            for (const tab of ribbon) {
+                if (hiddenTabKeys.has(tab.key)) {
+                    continue;
+                }
 
-                            if (item.children?.length) {
-                                for (const child of item.children) {
-                                    if (!hiddenPathMap.includes(child.key)) {
-                                        newItem.children?.push(child);
-                                    }
-                                }
+                const newTab: IMenuSchema = { ...tab, children: [] };
 
-                                if (newItem.children?.every((child) => child.children?.length === 0)) {
-                                    shouldAddItem = false;
+                if (tab.children?.length) {
+                    for (const group of tab.children) {
+                        if (hiddenGroupKeys.has(group.key)) {
+                            continue;
+                        }
+
+                        const newGroup: IMenuSchema = { ...group, children: [] };
+                        let shouldAddGroup = true;
+
+                        if (group.children?.length) {
+                            for (const child of group.children) {
+                                if (!hiddenChildKeys.has(child.key)) {
+                                    newGroup.children?.push(child);
                                 }
                             }
 
-                            if (shouldAddItem) {
-                                newGroup.children?.push(newItem);
+                            if (newGroup.children?.every((child) => child.children?.length === 0)) {
+                                shouldAddGroup = false;
                             }
                         }
-                    }
 
-                    if (newGroup.children?.length && newGroup.children.every((item) => item.children?.length)) {
-                        newRibbon.push(newGroup);
+                        if (shouldAddGroup) {
+                            newTab.children?.push(newGroup);
+                        }
                     }
                 }
 
-                this._ribbon$.next(newRibbon);
-            })
-            .unsubscribe();
+                if (newTab.children?.length && newTab.children.every((item) => item.children?.length)) {
+                    newRibbon.push(newTab);
+                }
+            }
+
+            this._ribbon$.next(newRibbon);
+            this._ensureActivatedTab(newRibbon, previousRibbon);
+        });
+    }
+
+    private _ensureActivatedTab(newRibbon: IMenuSchema[], previousRibbon: IMenuSchema[]) {
+        const currentTab = this._activatedTab$.getValue();
+        const currentTabSchema = newRibbon.find((tab) => tab.key === currentTab);
+
+        // Current tab disappeared and it was a contextual tab, fallback to previous non-contextual tab
+        if (!currentTabSchema) {
+            const previousTabSchema = previousRibbon.find((tab) => tab.key === currentTab);
+            if (previousTabSchema?.contextual) {
+                const fallbackTab = newRibbon.some((tab) => tab.key === this._previousNonContextualTab)
+                    ? this._previousNonContextualTab
+                    : (newRibbon.find((tab) => !tab.contextual)?.key ?? RibbonPosition.START);
+                this._activatedTab$.next(fallbackTab);
+            }
+            return;
+        }
+
+        // Check if any new contextual tab has appeared
+        const newlyVisibleContextualTabs = newRibbon.filter((tab) =>
+            tab.contextual && !previousRibbon.some((prevTab) => prevTab.key === tab.key)
+        );
+
+        if (newlyVisibleContextualTabs.length > 0 && !currentTabSchema.contextual) {
+            this._previousNonContextualTab = currentTab;
+            this._activatedTab$.next(newlyVisibleContextualTabs[0].key);
+        }
+    }
+
+    override dispose(): void {
+        this._hiddenSubscription?.unsubscribe();
+        this._hiddenSubscription = null;
+        super.dispose();
     }
 }

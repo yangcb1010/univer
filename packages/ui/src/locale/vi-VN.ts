@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'Chuyển đổi chế độ xem và điều chỉnh hiệu ứng hiển thị.',
         others: 'Khác',
         othersDesc: 'Các chức năng và cài đặt khác.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'Thêm',
     },
     fontFamily: {

@@ -42,6 +42,8 @@ const locale = {
         viewDesc: 'Switch view modes and adjust the display effect.',
         others: 'Others',
         othersDesc: 'Other functions and settings.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'More',
     },
     fontFamily: {

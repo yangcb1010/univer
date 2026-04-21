@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: '보기 모드를 전환하고 표시 효과를 조정합니다.',
         others: '기타',
         othersDesc: '기타 함수와 설정.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: '더 보기',
     },
     fontFamily: {

@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'Changer les modes d\'affichage et ajuster l\'effet d\'affichage.',
         others: 'Autres',
         othersDesc: 'Autres fonctions et paramètres.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'Plus',
     },
     fontFamily: {

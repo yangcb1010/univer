@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: '表示モードを切り替え、表示効果を調整します。',
         others: 'その他',
         othersDesc: 'その他の機能と設定。',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'もっと見る',
     },
     fontFamily: {

@@ -63,6 +63,13 @@ export enum RibbonOthersGroup {
     OTHERS = 'ribbon.others.others',
 }
 
+export enum RibbonContextualGroup {
+    ADJUST = 'ribbon.contextual.adjust',
+    ARRANGE = 'ribbon.contextual.arrange',
+    FORMAT = 'ribbon.contextual.format',
+    OTHERS = 'ribbon.contextual.others',
+}
+
 export enum ContextMenuPosition {
     MAIN_AREA = 'contextMenu.mainArea',
     COL_HEADER = 'contextMenu.colHeader',

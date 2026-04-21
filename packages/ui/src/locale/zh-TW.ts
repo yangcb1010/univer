@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: '切換視圖模式並調整顯示效果。',
         others: '其他',
         othersDesc: '其他功能和設定。',
+        drawingFormat: '圖形格式',
+        drawingFormatDesc: '格式化選中的圖形。',
         more: '更多',
     },
     fontFamily: {

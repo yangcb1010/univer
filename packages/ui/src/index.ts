@@ -96,6 +96,7 @@ export {
     ContextMenuGroup,
     ContextMenuPosition,
     MenuManagerPosition,
+    RibbonContextualGroup,
     RibbonDataGroup,
     RibbonFormulasGroup,
     RibbonInsertGroup,

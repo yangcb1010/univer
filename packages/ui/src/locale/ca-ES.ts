@@ -44,6 +44,8 @@ const locale: typeof enUS = {
         viewDesc: 'Canvia els modes de vista i ajusta l\'efecte de visualització.',
         others: 'Altres',
         othersDesc: 'Altres funcions i configuracions.',
+        drawingFormat: 'Drawing Format',
+        drawingFormatDesc: 'Format selected drawing.',
         more: 'Més',
     },
     fontFamily: {
