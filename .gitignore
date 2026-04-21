@@ -121,3 +121,6 @@ typedoc.json
 
 # tsx
 **/tsx-0
+
+# auto-generated preset locales
+presets/**/src/locales/

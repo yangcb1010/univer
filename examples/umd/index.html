@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Univer UMD Examples</title>
+        <style>
+            html,
+            body {
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    sans-serif;
+                max-width: 800px;
+                margin: 40px auto;
+                padding: 0 20px;
+                background: #fafafa;
+                color: #333;
+            }
+            h1 {
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+            .subtitle {
+                color: #666;
+                margin-bottom: 24px;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            li {
+                margin: 12px 0;
+            }
+            a {
+                display: block;
+                padding: 20px;
+                background: #fff;
+                border-radius: 12px;
+                text-decoration: none;
+                color: #0066ff;
+                font-weight: 600;
+                font-size: 16px;
+                transition: all 0.2s;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+                border: 1px solid #e8e8e8;
+            }
+            a:hover {
+                background: #f8faff;
+                border-color: #b3d1ff;
+                box-shadow: 0 4px 12px rgba(0, 102, 255, 0.1);
+            }
+            .desc {
+                color: #666;
+                font-size: 14px;
+                margin-top: 6px;
+                font-weight: 400;
+            }
+            .note {
+                background: #fffbe6;
+                border: 1px solid #ffe58f;
+                padding: 16px 20px;
+                border-radius: 12px;
+                margin: 24px 0;
+                color: #614700;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            code {
+                background: #f0f0f0;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Univer UMD Examples</h1>
+        <div class="subtitle">Verify UMD builds work correctly in the browser.</div>
+
+        <div class="note">
+            <strong>Usage:</strong> Start a static server from the project root with <code>pnpm serve:umd</code> (or
+            <code>npx serve .</code>), then open <code>http://localhost:3000/examples/umd/</code>
+            and click the links below.
+        </div>
+
+        <ul>
+            <li>
+                <a href="./docs.html">
+                    Docs UMD Example
+                    <div class="desc">Test the document editor UMD build.</div>
+                </a>
+            </li>
+            <li>
+                <a href="./sheets.html">
+                    Sheets UMD Example
+                    <div class="desc">Test the spreadsheet UMD build with formula and number format plugins.</div>
+                </a>
+            </li>
+            <li>
+                <a href="./slides.html">
+                    Slides UMD Example
+                    <div class="desc">Test the presentation / slides UMD build.</div>
+                </a>
+            </li>
+        </ul>
+    </body>
+</html>

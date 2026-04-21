@@ -50,7 +50,8 @@ export function prepareLocales(options: IPrepareLocalesOptions) {
     fs.ensureDirSync(localesDir);
 
     for (const localeKey of LOCALE_MAP) {
-        let content = 'import { mergeLocales } from \'@univerjs/core\';\n\n';
+        let content = '/* eslint-disable */\n\n';
+        content += 'import { mergeLocales } from \'@univerjs/core\';\n\n';
         const depsSet = new Set<string>();
 
         for (const key of Object.keys(pkg.dependencies || {})) {
