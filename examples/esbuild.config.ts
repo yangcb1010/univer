@@ -235,6 +235,36 @@ if (!args.watch) {
 
 const { entryPoints } = syncDemoArtifacts();
 
+/**
+ * Resolve paths like `@univerjs/xxx/lib/yyy` for workspace packages
+ * that only expose `src/*` in their top-level exports.
+ */
+const resolveUniverLibPathsPlugin = (): Plugin => ({
+    name: 'resolve-univer-lib-paths',
+    setup(build) {
+        build.onResolve({ filter: /^@univerjs\// }, (args) => {
+            // Only handle paths with /lib/
+            if (!args.path.includes('/lib/')) {
+                return undefined;
+            }
+
+            const parts = args.path.split('/');
+            const scope = parts[0]; // @univerjs
+            const pkgName = parts[1];
+            const subPath = parts.slice(2).join('/');
+
+            const resolved = path.resolve(
+                nodeModules,
+                scope,
+                pkgName,
+                subPath
+            );
+
+            return { path: resolved };
+        });
+    },
+});
+
 const config: SameShape<BuildOptions, BuildOptions> = {
     bundle: true,
     format: 'esm',
@@ -245,6 +275,7 @@ const config: SameShape<BuildOptions, BuildOptions> = {
     minify: false,
     target: 'chrome70',
     plugins: [
+        resolveUniverLibPathsPlugin(),
         ignoreGlobalCssPlugin(),
         removeClassnameNewlinesPlugin(),
         copyPlugin({

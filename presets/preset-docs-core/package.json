@@ -1,0 +1,98 @@
+{
+    "name": "@univerjs/preset-docs-core",
+    "version": "0.20.1",
+    "private": false,
+    "description": "Univer docs core preset",
+    "author": "DreamNum Co., Ltd. <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/univer"
+    },
+    "homepage": "https://univer.ai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dream-num/univer"
+    },
+    "bugs": {
+        "url": "https://github.com/dream-num/univer/issues"
+    },
+    "keywords": [
+        "univer",
+        "univer-preset"
+    ],
+    "sideEffects": [
+        "*.css"
+    ],
+    "exports": {
+        ".": "./src/index.ts",
+        "./*": "./src/*",
+        "./locales/*": "./src/locales/*.ts",
+        "./locale/*": "./src/locale/*.ts"
+    },
+    "main": "./src/index.ts",
+    "publishConfig": {
+        "access": "public",
+        "main": "./lib/es/index.js",
+        "module": "./lib/es/index.js",
+        "exports": {
+            ".": {
+                "import": "./lib/es/index.js",
+                "require": "./lib/cjs/index.js",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./*": {
+                "import": "./lib/es/*",
+                "require": "./lib/cjs/*",
+                "types": "./lib/types/index.d.ts"
+            },
+            "./locale/*": {
+                "import": "./lib/es/locale/*.js",
+                "require": "./lib/cjs/locale/*.js",
+                "types": "./lib/types/locale/*.d.ts"
+            },
+            "./lib/*": "./lib/*"
+        }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "prebuild:bundle": "preset-build prepare",
+        "build:bundle": "preset-build",
+        "build:types": "tsc -p tsconfig.node.json",
+        "build": "pnpm run build:bundle && pnpm run build:types",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@univerjs/core": "workspace:*",
+        "@univerjs/design": "workspace:*",
+        "@univerjs/docs": "workspace:*",
+        "@univerjs/docs-ui": "workspace:*",
+        "@univerjs/engine-formula": "workspace:*",
+        "@univerjs/engine-render": "workspace:*",
+        "@univerjs/network": "workspace:*",
+        "@univerjs/ui": "workspace:*"
+    },
+    "devDependencies": {
+        "@univerjs-infra/shared": "workspace:*",
+        "react": "19.2.5",
+        "react-dom": "19.2.5",
+        "rxjs": "^7.8.2",
+        "typescript": "^6.0.2"
+    },
+    "univerPreset": {
+        "umdDeps": [
+            "@univerjs/design",
+            "@univerjs/ui",
+            "@univerjs/docs",
+            "@univerjs/docs-ui",
+            "@univerjs/engine-render",
+            "@univerjs/engine-formula",
+            "@univerjs/network"
+        ]
+    }
+}
