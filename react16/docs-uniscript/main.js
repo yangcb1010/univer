@@ -1,20 +1,20 @@
 import {
   UniverUniscriptPlugin
-} from "../chunk-HGZE2G36.js";
+} from "../chunk-XVGF3JNP.js";
 import "../chunk-GCGI23F5.js";
 import "../chunk-CQY74AWC.js";
 import "../chunk-CLMLYKFF.js";
 import "../chunk-DQJ4ICFF.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-ZGAQS7CU.js";
+} from "../chunk-YXSR4BS6.js";
 import {
   DEFAULT_DOCUMENT_DATA_CN
-} from "../chunk-ZDLDEJRU.js";
+} from "../chunk-KHPZTZ3O.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin
-} from "../chunk-YSE4D6PG.js";
+} from "../chunk-734DEVRI.js";
 import "../chunk-LI6UXASZ.js";
 import {
   UniverUIPlugin
