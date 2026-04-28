@@ -1,16 +1,16 @@
 import {
   UniverSheetsFindReplacePlugin
-} from "../chunk-BUN5IJPW.js";
+} from "../chunk-H7VJGYTU.js";
 import {
   UniverSheetsThreadCommentUIPlugin
-} from "../chunk-VI6JHSND.js";
+} from "../chunk-BVZZMKBJ.js";
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
-} from "../chunk-BHGONILN.js";
+} from "../chunk-ZFOY64JB.js";
 import {
   UniverSheetsSortUIPlugin
-} from "../chunk-LNCCB2VP.js";
+} from "../chunk-7HIGT24S.js";
 import {
   UniverThreadCommentUIPlugin
 } from "../chunk-53NMMY3Y.js";
@@ -27,18 +27,18 @@ import {
 } from "../chunk-OBLMIW5B.js";
 import {
   UniverSheetsCrosshairHighlightPlugin
-} from "../chunk-3N2KRKLA.js";
+} from "../chunk-KUWV6S3T.js";
 import {
   UniverSheetsNotePlugin,
   UniverSheetsTablePlugin
 } from "../chunk-6HJ2AFEJ.js";
 import {
   UniverSheetsZenEditorPlugin
-} from "../chunk-3P6P63QT.js";
+} from "../chunk-E6PQNNY5.js";
 import {
   UniverSheetsHyperLinkPlugin,
   UniverSheetsHyperLinkUIPlugin
-} from "../chunk-E7YKKF6O.js";
+} from "../chunk-IFKIVI26.js";
 import {
   UniverSheetsSortPlugin
 } from "../chunk-OKTSBE2K.js";
@@ -51,7 +51,7 @@ import {
 import {
   UniverSheetsDrawingPlugin,
   UniverSheetsDrawingUIPlugin
-} from "../chunk-DJWHVD66.js";
+} from "../chunk-MBWDTCKE.js";
 import {
   FUniver
 } from "../chunk-DQJ4ICFF.js";
@@ -59,7 +59,7 @@ import {
   UniverSheetsConditionalFormattingUIPlugin,
   UniverSheetsDataValidationUIPlugin,
   UniverSheetsFilterUIPlugin
-} from "../chunk-Q4TULZXJ.js";
+} from "../chunk-TXVL7FGW.js";
 import {
   UniverSheetsConditionalFormattingPlugin
 } from "../chunk-I6FFS7ZB.js";
@@ -68,16 +68,16 @@ import {
 } from "../chunk-42IRN2CZ.js";
 import {
   UniverSheetsNumfmtUIPlugin
-} from "../chunk-FVOAAXPH.js";
+} from "../chunk-WJA2EZZE.js";
 import {
   UniverSheetsFormulaUIPlugin
-} from "../chunk-DSWSTBTR.js";
+} from "../chunk-TG2LLSUD.js";
 import {
   UniverSheetsNumfmtPlugin
 } from "../chunk-FFADTKHL.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-WXEDAHSD.js";
+} from "../chunk-ZGAQS7CU.js";
 import {
   DEFAULT_WORKBOOK_DATA_DEMO
 } from "../chunk-ZDLDEJRU.js";
