@@ -1,13 +1,13 @@
 import {
   UniverUniscriptPlugin
-} from "../chunk-IGTSK7VD.js";
+} from "../chunk-TAI3H5NB.js";
 import "../chunk-GCGI23F5.js";
 import "../chunk-CQY74AWC.js";
 import "../chunk-CLMLYKFF.js";
 import "../chunk-DQJ4ICFF.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-3BVI6WHV.js";
+} from "../chunk-WXEDAHSD.js";
 import {
   DEFAULT_DOCUMENT_DATA_CN
 } from "../chunk-ZDLDEJRU.js";
