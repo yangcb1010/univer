@@ -64,7 +64,7 @@ import {
 import "../chunk-KQYZILYJ.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-SLKUTJVX.js";
+} from "../chunk-QTAYMZHN.js";
 import "../chunk-PNO5SOYN.js";
 import "../chunk-IBVO3ATC.js";
 import "../chunk-2Q5Y46ZC.js";
@@ -638,7 +638,7 @@ function createNewInstance() {
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-HZI277VQ.js").then((lazy) => {
+    import("../very-lazy-UPUASCXE.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
