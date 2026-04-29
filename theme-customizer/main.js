@@ -1,10 +1,10 @@
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
-} from "../chunk-2J7KK3BB.js";
+} from "../chunk-MRWC7G2D.js";
 import {
   UniverSheetsSortUIPlugin
-} from "../chunk-F3NEKQID.js";
+} from "../chunk-BWOA6ACZ.js";
 import {
   en_US_default
 } from "../chunk-WVRTT5L6.js";
@@ -17,11 +17,11 @@ import {
 } from "../chunk-OSFGOVOC.js";
 import {
   UniverSheetsZenEditorPlugin
-} from "../chunk-XGUCTDLL.js";
+} from "../chunk-AWBM7VJQ.js";
 import {
   UniverSheetsHyperLinkPlugin,
   UniverSheetsHyperLinkUIPlugin
-} from "../chunk-RZAQZWYU.js";
+} from "../chunk-UTTHDTGY.js";
 import {
   UniverSheetsSortPlugin
 } from "../chunk-6IIG3KQP.js";
@@ -29,7 +29,7 @@ import {
   UniverSheetsConditionalFormattingUIPlugin,
   UniverSheetsDataValidationUIPlugin,
   UniverSheetsFilterUIPlugin
-} from "../chunk-MUJ5HBMX.js";
+} from "../chunk-JIUN32YR.js";
 import {
   UniverSheetsConditionalFormattingPlugin
 } from "../chunk-E7WVX3IP.js";
@@ -38,24 +38,24 @@ import {
 } from "../chunk-I2DDQDZG.js";
 import {
   UniverSheetsNumfmtUIPlugin
-} from "../chunk-4PFQU5IC.js";
+} from "../chunk-3LJZXYI4.js";
 import {
   UniverSheetsFormulaUIPlugin
-} from "../chunk-MVJBX27N.js";
+} from "../chunk-EHIPW2M2.js";
 import {
   UniverSheetsNumfmtPlugin
 } from "../chunk-GLHKEG7P.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-BW3AQV7J.js";
+} from "../chunk-EKWBLXTL.js";
 import {
   DEFAULT_WORKBOOK_DATA_DEMO
-} from "../chunk-5DFHNS3X.js";
+} from "../chunk-JP4FSFFS.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin,
   UniverSheetsDataValidationPlugin
-} from "../chunk-XHMTLDV6.js";
+} from "../chunk-HHST3MT6.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,

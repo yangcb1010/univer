@@ -1,22 +1,22 @@
 import {
   UniverSheetsNumfmtUIPlugin
-} from "../chunk-4PFQU5IC.js";
+} from "../chunk-3LJZXYI4.js";
 import {
   UniverSheetsFormulaUIPlugin
-} from "../chunk-MVJBX27N.js";
+} from "../chunk-EHIPW2M2.js";
 import {
   UniverSheetsNumfmtPlugin
 } from "../chunk-GLHKEG7P.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-BW3AQV7J.js";
+} from "../chunk-EKWBLXTL.js";
 import {
   DEFAULT_WORKBOOK_DATA_DEMO
-} from "../chunk-5DFHNS3X.js";
+} from "../chunk-JP4FSFFS.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin
-} from "../chunk-XHMTLDV6.js";
+} from "../chunk-HHST3MT6.js";
 import "../chunk-LI6UXASZ.js";
 import {
   UniverUIPlugin,
