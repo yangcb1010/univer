@@ -1,80 +1,80 @@
-import "../chunk-KYOJ6ZIG.js";
-import "../chunk-N4XO3K4W.js";
+import "../chunk-VUOGANWW.js";
+import "../chunk-4NS6IGPD.js";
 import {
   UniverNetworkPlugin
-} from "../chunk-SSQ6D67T.js";
-import "../chunk-BEKBCAYI.js";
+} from "../chunk-G5Q3S2AD.js";
+import "../chunk-4B4C4TNZ.js";
 import {
   UniverSheetsThreadCommentPlugin
-} from "../chunk-FRSU62BE.js";
-import "../chunk-WCLHK6UQ.js";
+} from "../chunk-GYSH6HL2.js";
+import "../chunk-DKS4OYGR.js";
 import {
   UniverSheetsNotePlugin,
   UniverSheetsTablePlugin
-} from "../chunk-ZT5VZXQD.js";
+} from "../chunk-5LSPWM2V.js";
 import {
   UniverSheetsZenEditorPlugin
-} from "../chunk-4DKO6Y4L.js";
+} from "../chunk-QDPEMCUR.js";
 import {
   UniverSheetsHyperLinkPlugin
-} from "../chunk-7YSQRUR6.js";
+} from "../chunk-MIVGOTSS.js";
 import {
   UniverSheetsSortPlugin
-} from "../chunk-SK52SX2N.js";
-import "../chunk-CTDXDRII.js";
+} from "../chunk-W7EFL2EA.js";
+import "../chunk-SYD2KNGE.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-JLCPK5H5.js";
-import "../chunk-YK2VSIVS.js";
-import "../chunk-IBVO3ATC.js";
-import "../chunk-2Q5Y46ZC.js";
-import "../chunk-UCIFE6PS.js";
+} from "../chunk-AT3ISH7R.js";
+import "../chunk-THXVG335.js";
+import "../chunk-VVSCTRT4.js";
+import "../chunk-MOHJC2BO.js";
+import "../chunk-MLFBVVME.js";
 import {
   FUniver
-} from "../chunk-HM2RZA4P.js";
+} from "../chunk-BOFO7FDU.js";
 import {
   UniverSheetsConditionalFormattingPlugin
-} from "../chunk-5RETGFZ5.js";
+} from "../chunk-2FNOW4GK.js";
 import {
   UniverSheetsFilterPlugin
-} from "../chunk-QHE3GYBX.js";
-import "../chunk-V4AG2SQQ.js";
+} from "../chunk-AZHMLAGZ.js";
+import "../chunk-M6GAWQ5P.js";
 import {
   UniverSheetsNumfmtPlugin
-} from "../chunk-4L54LCYD.js";
+} from "../chunk-N2RQEFDC.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-S5L6MNLS.js";
+} from "../chunk-MBZ442FO.js";
 import {
   DEFAULT_WORKBOOK_DATA_DEMO
-} from "../chunk-JWCRJMB3.js";
+} from "../chunk-YLOR7Z6Y.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin,
   UniverSheetsDataValidationPlugin
-} from "../chunk-CBUGNSM5.js";
+} from "../chunk-PPREH44U.js";
 import "../chunk-LI6UXASZ.js";
 import {
   UniverUIPlugin
-} from "../chunk-QRN3BRSB.js";
+} from "../chunk-NW5FEDQC.js";
 import {
   zh_CN_default
-} from "../chunk-AQIU5XW4.js";
+} from "../chunk-OROQCTWB.js";
 import {
   UniverSheetsFormulaPlugin
-} from "../chunk-F6LNSSAA.js";
+} from "../chunk-5YA62WFH.js";
 import {
   UniverFormulaEnginePlugin,
   UniverRPCMainThreadPlugin,
   UniverSheetsPlugin
-} from "../chunk-AUPUCYDH.js";
+} from "../chunk-JGEZE7BC.js";
 import {
   UniverRenderEnginePlugin
-} from "../chunk-QYXLJWB3.js";
+} from "../chunk-VYDPVHQH.js";
 import {
   Univer,
   UserManagerService
-} from "../chunk-KN22OUW2.js";
+} from "../chunk-UI3TUZSE.js";
 import "../chunk-EQ2B2W73.js";
 import "../chunk-24OICD5T.js";
 
@@ -140,13 +140,13 @@ function createNewInstance() {
     univer.createUnit(2 /* UNIVER_SHEET */, DEFAULT_WORKBOOK_DATA_DEMO);
   }
   setTimeout(() => {
-    import("../lazy-2CS7UCDC.js").then((lazy) => {
+    import("../lazy-ETJUQYW5.js").then((lazy) => {
       const plugins = lazy.default();
       plugins.forEach((p) => univer.registerPlugin(p[0], p[1]));
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-MEJIFII2.js").then((lazy) => {
+    import("../very-lazy-6YZ3ODUI.js").then((lazy) => {
       const plugins = lazy.default();
       plugins.forEach((p) => univer.registerPlugin(p[0], p[1]));
     });
