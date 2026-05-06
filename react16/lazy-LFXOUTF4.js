@@ -1,0 +1,67 @@
+import {
+  UniverSheetsThreadCommentUIPlugin
+} from "./chunk-24VREKXD.js";
+import {
+  UniverSheetsNoteUIPlugin,
+  UniverSheetsTableUIPlugin
+} from "./chunk-45QE56EZ.js";
+import {
+  UniverDocsMentionUIPlugin
+} from "./chunk-EGKCHT5P.js";
+import {
+  UniverThreadCommentUIPlugin
+} from "./chunk-KONRP5GE.js";
+import "./chunk-Y2QJIYBZ.js";
+import "./chunk-QNGZ57JQ.js";
+import "./chunk-IH2RTU4Q.js";
+import {
+  UniverDocsDrawingUIPlugin
+} from "./chunk-HD4WLLNA.js";
+import "./chunk-XG7RNNO7.js";
+import {
+  UniverSheetsDrawingUIPlugin
+} from "./chunk-VZ7JWGGE.js";
+import {
+  UniverSheetsConditionalFormattingUIPlugin,
+  UniverSheetsDataValidationUIPlugin,
+  UniverSheetsFilterUIPlugin
+} from "./chunk-TADKUD36.js";
+import "./chunk-TEVUXPNQ.js";
+import "./chunk-S7DVJKAI.js";
+import {
+  UniverSheetsNumfmtUIPlugin
+} from "./chunk-HY57EAG7.js";
+import {
+  UniverSheetsFormulaUIPlugin
+} from "./chunk-E23HUUK6.js";
+import "./chunk-HY7BXP3A.js";
+import "./chunk-K5YXKZNS.js";
+import "./chunk-TE5DB5RE.js";
+import "./chunk-J6USL5WQ.js";
+import "./chunk-GZD4ZKOT.js";
+import "./chunk-KNX6MG2E.js";
+import "./chunk-SO7FMCUD.js";
+import "./chunk-DXN2UBCQ.js";
+import "./chunk-EQ2B2W73.js";
+import "./chunk-24OICD5T.js";
+
+// src/sheets-no-worker/lazy.ts
+function getLazyPlugins() {
+  return [
+    [UniverDocsDrawingUIPlugin],
+    [UniverDocsMentionUIPlugin],
+    [UniverSheetsNumfmtUIPlugin],
+    [UniverThreadCommentUIPlugin],
+    [UniverSheetsThreadCommentUIPlugin],
+    [UniverSheetsNoteUIPlugin],
+    [UniverSheetsTableUIPlugin],
+    [UniverSheetsFormulaUIPlugin],
+    [UniverSheetsDataValidationUIPlugin],
+    [UniverSheetsConditionalFormattingUIPlugin],
+    [UniverSheetsFilterUIPlugin, { useRemoteFilterValuesGenerator: false }],
+    [UniverSheetsDrawingUIPlugin]
+  ];
+}
+export {
+  getLazyPlugins as default
+};
