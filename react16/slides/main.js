@@ -2,7 +2,7 @@ import {
   DEFAULT_SLIDE_DATA,
   ObjectProvider,
   UniverSlidesPlugin
-} from "../chunk-E2MABSVY.js";
+} from "../chunk-E72PIMKO.js";
 import {
   DOCS_COMPONENT_MAIN_LAYER_INDEX,
   DRAWING_IMAGE_ALLOW_IMAGE_LIST,
@@ -18,7 +18,7 @@ import {
   UniverDocsUIPlugin,
   UniverDrawingPlugin,
   getImageSize
-} from "../chunk-TE5DB5RE.js";
+} from "../chunk-IYSWF4T7.js";
 import "../chunk-LI6UXASZ.js";
 import {
   AutofillDoubleIcon,
