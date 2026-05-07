@@ -1,38 +1,38 @@
 import {
   UniverDocsMentionUIPlugin
-} from "../chunk-XJH4XBA6.js";
+} from "../chunk-BL2I6YTS.js";
 import {
   SetActiveCommentOperation,
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-47WYF6EK.js";
-import "../chunk-42LYUK4T.js";
+} from "../chunk-DNKQE2BN.js";
+import "../chunk-QFOUHD3A.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-W5VNFEWG.js";
+} from "../chunk-FAZV3CJI.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-ZNZF4CMK.js";
+} from "../chunk-I5ZAGDNQ.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
   ThreadCommentModel,
   getDT
-} from "../chunk-KP75HSHA.js";
-import "../chunk-VVID4OSL.js";
+} from "../chunk-PTUDFRVW.js";
+import "../chunk-4MIURUJC.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-EHR6CMSV.js";
+} from "../chunk-GMKCY45I.js";
 import {
   FUniver
-} from "../chunk-V3L6JNGK.js";
-import "../chunk-F622OH7T.js";
+} from "../chunk-J3MDMXBD.js";
+import "../chunk-LOEZYBXQ.js";
 import {
   DEFAULT_DOCUMENT_DATA_SIMPLE
-} from "../chunk-CA2COOAB.js";
+} from "../chunk-L4AHYLQQ.js";
 import {
   BulletListCommand,
   CutContentCommand,
@@ -66,7 +66,7 @@ import {
   getAnchorBounding,
   replaceSelectionFactory,
   whenDocAndEditorFocused
-} from "../chunk-TPTPVTVV.js";
+} from "../chunk-SDTDQF3Y.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,
@@ -98,20 +98,20 @@ import {
   useDependency,
   useEvent,
   useObservable
-} from "../chunk-KRK3QYNT.js";
+} from "../chunk-6E6ICWSP.js";
 import {
   zh_CN_default
-} from "../chunk-4LTZK3UJ.js";
-import "../chunk-6OMLXICI.js";
+} from "../chunk-XSVQCYTF.js";
+import "../chunk-IXDOPMZO.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-6RW5DR6W.js";
+} from "../chunk-AXB7KB7I.js";
 import {
   IRenderManagerService,
   UniverRenderEnginePlugin,
   ptToPixel,
   withCurrentTypeOfRenderer
-} from "../chunk-UVQEXWQY.js";
+} from "../chunk-57HMVZV2.js";
 import {
   BehaviorSubject,
   BuildTextUtils,
@@ -147,7 +147,7 @@ import {
   sequenceExecute,
   tap,
   toDisposable
-} from "../chunk-4REX3RLT.js";
+} from "../chunk-J4TGZIZO.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
@@ -161,7 +161,7 @@ var package_default = {
   name: "@univerjs/docs-hyper-link",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
+  description: "Hyperlink model and commands for Univer Docs.",
   author: "DreamNum <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
@@ -176,7 +176,13 @@ var package_default = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "hyperlink",
+    "link",
+    "plugin"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*"
@@ -377,7 +383,7 @@ var package_default2 = {
   name: "@univerjs/docs-hyper-link-ui",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
+  description: "Hyperlink editing UI for Univer Docs.",
   author: "DreamNum <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
@@ -392,7 +398,13 @@ var package_default2 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "hyperlink",
+    "link",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*",
@@ -2335,7 +2347,7 @@ var package_default3 = {
   name: "@univerjs/docs-quick-insert-ui",
   version: "0.21.1",
   private: false,
-  description: "",
+  description: "Quick insert UI integration for Univer Docs.",
   author: "DreamNum <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
@@ -2350,7 +2362,13 @@ var package_default3 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "quick-insert",
+    "insert",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*",
@@ -2685,7 +2703,7 @@ var package_default4 = {
   name: "@univerjs/docs-thread-comment-ui",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
+  description: "Thread comment UI integration for Univer Docs.",
   author: "DreamNum <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
@@ -2700,7 +2718,13 @@ var package_default4 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "comment",
+    "thread-comment",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*"
