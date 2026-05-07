@@ -5,11 +5,11 @@ import {
   render,
   require_jsx_runtime,
   require_react
-} from "./chunk-A5GCOT5W.js";
-import "./chunk-JFCEKVKG.js";
+} from "./chunk-KRK3QYNT.js";
+import "./chunk-UVQEXWQY.js";
 import {
   default_default
-} from "./chunk-N3JNH6S5.js";
+} from "./chunk-4REX3RLT.js";
 import "./chunk-EQ2B2W73.js";
 import {
   __toESM
@@ -24,7 +24,7 @@ var package_default = {
   type: "module",
   version: "0.21.1",
   private: true,
-  packageManager: "pnpm@10.33.0",
+  packageManager: "pnpm@10.33.4",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
@@ -77,10 +77,10 @@ var package_default = {
   },
   devDependencies: {
     "@antfu/eslint-config": "^7.7.3",
-    "@commitlint/cli": "^20.5.0",
-    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@eslint-react/eslint-plugin": "^2.13.0",
-    "@eslint/compat": "^2.0.3",
+    "@eslint/compat": "^2.0.5",
     "@playwright/test": "^1.57.0",
     "@release-it-plugins/workspaces": "^5.0.3",
     "@release-it/conventional-changelog": "^10.0.6",
@@ -90,32 +90,32 @@ var package_default = {
     "@types/react-dom": "19.2.3",
     "@univerjs-infra/shared": "workspace:*",
     "@univerjs/design": "workspace:*",
-    eslint: "10.2.0",
+    eslint: "10.3.0",
     "eslint-plugin-format": "^2.0.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "fs-extra": "^11.3.4",
+    "fs-extra": "^11.3.5",
     husky: "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "posthog-node": "^5.29.2",
-    react: "19.2.5",
-    "react-dom": "19.2.5",
+    "lint-staged": "^17.0.2",
+    "posthog-node": "^5.33.3",
+    react: "19.2.6",
+    "react-dom": "19.2.6",
     "release-it": "^19.2.4",
     serve: "^14.2.6",
     tailwindcss: "3.4.18",
     tsx: "^4.21.0",
-    turbo: "^2.9.6",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    turbo: "^2.9.9",
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   },
   pnpm: {
     overrides: {
       "@types/react": "19.2.14",
       "@types/react-dom": "19.2.3",
       "basic-ftp": "5.2.0",
-      react: "19.2.5",
-      "react-dom": "19.2.5"
+      react: "19.2.6",
+      "react-dom": "19.2.6"
     }
   },
   "lint-staged": {
@@ -219,11 +219,11 @@ if (true) {
     // eslint-disable-next-line node/prefer-global/process
     NODE_ENV: "production",
     // eslint-disable-next-line node/prefer-global/process
-    GIT_COMMIT_HASH: "a3ea81f",
+    GIT_COMMIT_HASH: "e48bb5e",
     // eslint-disable-next-line node/prefer-global/process
     GIT_REF_NAME: "docs/readme",
     // eslint-disable-next-line node/prefer-global/process
-    BUILD_TIME: "2026-05-07T11:17:48.541Z"
+    BUILD_TIME: "2026-05-07T11:28:08.129Z"
   });
 }
 function DemoList({ items }) {
