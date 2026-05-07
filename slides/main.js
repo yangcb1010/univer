@@ -2,7 +2,7 @@ import {
   DEFAULT_SLIDE_DATA,
   ObjectProvider,
   UniverSlidesPlugin
-} from "../chunk-QLQENQID.js";
+} from "../chunk-EI2ZPB42.js";
 import {
   DOCS_COMPONENT_MAIN_LAYER_INDEX,
   DRAWING_IMAGE_ALLOW_IMAGE_LIST,
@@ -18,7 +18,7 @@ import {
   UniverDocsUIPlugin,
   UniverDrawingPlugin,
   getImageSize
-} from "../chunk-AV4ZZJ7C.js";
+} from "../chunk-IE6OHZ2X.js";
 import "../chunk-LI6UXASZ.js";
 import {
   AutofillDoubleIcon,
@@ -54,14 +54,14 @@ import {
   scrollbarClassName,
   useDependency,
   useObservable
-} from "../chunk-A5GCOT5W.js";
+} from "../chunk-I3IHURGK.js";
 import {
   zh_CN_default
-} from "../chunk-H5O7JAYO.js";
-import "../chunk-DVLMYM77.js";
+} from "../chunk-I2PLKRB7.js";
+import "../chunk-QPDVXCXL.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-FUIDLLAE.js";
+} from "../chunk-LGDLPCKF.js";
 import {
   FIX_ONE_PIXEL_BLUR_OFFSET,
   IRenderManagerService,
@@ -75,7 +75,7 @@ import {
   fixLineWidthByScale,
   getCurrentTypeOfRenderer,
   pxToNum
-} from "../chunk-JFCEKVKG.js";
+} from "../chunk-EXOTAHLR.js";
 import {
   BehaviorSubject,
   DEFAULT_EMPTY_DOCUMENT_VALUE,
@@ -112,7 +112,7 @@ import {
   merge_default,
   takeUntil,
   toDisposable
-} from "../chunk-N3JNH6S5.js";
+} from "../chunk-NOOMCMF4.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
@@ -1749,8 +1749,8 @@ var package_default = {
   name: "@univerjs/slides-ui",
   version: "0.21.1",
   private: false,
-  description: "Univer normal ui-plugin-slides",
-  author: "DreamNum <developer@univer.ai>",
+  description: "Presentation editor UI layer for Univer Slides.",
+  author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
     type: "opencollective",
@@ -1765,7 +1765,11 @@ var package_default = {
     url: "https://github.com/dream-num/univer/issues"
   },
   keywords: [
-    "univer"
+    "univer",
+    "slides",
+    "presentation",
+    "editor",
+    "ui"
   ],
   exports: {
     ".": "./src/index.ts",
@@ -1829,12 +1833,12 @@ var package_default = {
   },
   devDependencies: {
     "@univerjs-infra/shared": "workspace:*",
-    postcss: "^8.5.10",
+    postcss: "^8.5.14",
     react: "18.3.1",
     rxjs: "^7.8.2",
     tailwindcss: "3.4.18",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   }
 };
 

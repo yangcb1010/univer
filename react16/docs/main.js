@@ -1,38 +1,38 @@
 import {
   UniverDocsMentionUIPlugin
-} from "../chunk-APMJYRHR.js";
+} from "../chunk-YJTT2QFR.js";
 import {
   SetActiveCommentOperation,
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-6FAI3ZUV.js";
-import "../chunk-6XPUXBFL.js";
+} from "../chunk-CFKODFFE.js";
+import "../chunk-5WNMEUO3.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-6BSJRMKR.js";
+} from "../chunk-2JQ7INQE.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-WM2ZYZWC.js";
+} from "../chunk-PMDWHHGR.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
   ThreadCommentModel,
   getDT
-} from "../chunk-3DDPXMNY.js";
-import "../chunk-UR6ZLWDF.js";
+} from "../chunk-IF47P4RI.js";
+import "../chunk-4XWTSGLC.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-RVGD4HSA.js";
+} from "../chunk-W3QAV2ZF.js";
 import {
   FUniver
-} from "../chunk-CBRPZDEK.js";
-import "../chunk-BWGM6XXQ.js";
+} from "../chunk-4V6L5VS2.js";
+import "../chunk-H6DLM7ZV.js";
 import {
   DEFAULT_DOCUMENT_DATA_SIMPLE
-} from "../chunk-QLQENQID.js";
+} from "../chunk-EI2ZPB42.js";
 import {
   BulletListCommand,
   CutContentCommand,
@@ -66,7 +66,7 @@ import {
   getAnchorBounding,
   replaceSelectionFactory,
   whenDocAndEditorFocused
-} from "../chunk-AV4ZZJ7C.js";
+} from "../chunk-IE6OHZ2X.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,
@@ -98,20 +98,20 @@ import {
   useDependency,
   useEvent,
   useObservable
-} from "../chunk-A5GCOT5W.js";
+} from "../chunk-I3IHURGK.js";
 import {
   zh_CN_default
-} from "../chunk-H5O7JAYO.js";
-import "../chunk-DVLMYM77.js";
+} from "../chunk-I2PLKRB7.js";
+import "../chunk-QPDVXCXL.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-FUIDLLAE.js";
+} from "../chunk-LGDLPCKF.js";
 import {
   IRenderManagerService,
   UniverRenderEnginePlugin,
   ptToPixel,
   withCurrentTypeOfRenderer
-} from "../chunk-JFCEKVKG.js";
+} from "../chunk-EXOTAHLR.js";
 import {
   BehaviorSubject,
   BuildTextUtils,
@@ -147,7 +147,7 @@ import {
   sequenceExecute,
   tap,
   toDisposable
-} from "../chunk-N3JNH6S5.js";
+} from "../chunk-NOOMCMF4.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
@@ -161,8 +161,8 @@ var package_default = {
   name: "@univerjs/docs-hyper-link",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
-  author: "DreamNum <developer@univer.ai>",
+  description: "Hyperlink model and commands for Univer Docs.",
+  author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
     type: "opencollective",
@@ -176,7 +176,13 @@ var package_default = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "hyperlink",
+    "link",
+    "plugin"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*"
@@ -221,8 +227,8 @@ var package_default = {
   },
   devDependencies: {
     "@univerjs-infra/shared": "workspace:*",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   }
 };
 
@@ -377,8 +383,8 @@ var package_default2 = {
   name: "@univerjs/docs-hyper-link-ui",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
-  author: "DreamNum <developer@univer.ai>",
+  description: "Hyperlink editing UI for Univer Docs.",
+  author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
     type: "opencollective",
@@ -392,7 +398,13 @@ var package_default2 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "hyperlink",
+    "link",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*",
@@ -454,12 +466,12 @@ var package_default2 = {
   },
   devDependencies: {
     "@univerjs-infra/shared": "workspace:*",
-    postcss: "^8.5.10",
+    postcss: "^8.5.14",
     react: "18.3.1",
     rxjs: "^7.8.2",
     tailwindcss: "3.4.18",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   }
 };
 
@@ -2335,8 +2347,8 @@ var package_default3 = {
   name: "@univerjs/docs-quick-insert-ui",
   version: "0.21.1",
   private: false,
-  description: "",
-  author: "DreamNum <developer@univer.ai>",
+  description: "Quick insert UI integration for Univer Docs.",
+  author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
     type: "opencollective",
@@ -2350,7 +2362,13 @@ var package_default3 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "quick-insert",
+    "insert",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*",
@@ -2415,12 +2433,12 @@ var package_default3 = {
   },
   devDependencies: {
     "@univerjs-infra/shared": "workspace:*",
-    postcss: "^8.5.10",
+    postcss: "^8.5.14",
     react: "18.3.1",
     rxjs: "^7.8.2",
     tailwindcss: "3.4.18",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   }
 };
 
@@ -2685,8 +2703,8 @@ var package_default4 = {
   name: "@univerjs/docs-thread-comment-ui",
   version: "0.21.1",
   private: false,
-  description: "Univer thread comment plugin",
-  author: "DreamNum <developer@univer.ai>",
+  description: "Thread comment UI integration for Univer Docs.",
+  author: "DreamNum Co., Ltd. <developer@univer.ai>",
   license: "Apache-2.0",
   funding: {
     type: "opencollective",
@@ -2700,7 +2718,13 @@ var package_default4 = {
   bugs: {
     url: "https://github.com/dream-num/univer/issues"
   },
-  keywords: [],
+  keywords: [
+    "univer",
+    "docs",
+    "comment",
+    "thread-comment",
+    "ui"
+  ],
   exports: {
     ".": "./src/index.ts",
     "./*": "./src/*"
@@ -2756,12 +2780,12 @@ var package_default4 = {
   },
   devDependencies: {
     "@univerjs-infra/shared": "workspace:*",
-    postcss: "^8.5.10",
+    postcss: "^8.5.14",
     react: "18.3.1",
     rxjs: "^7.8.2",
     tailwindcss: "3.4.18",
-    typescript: "^6.0.2",
-    vitest: "^4.1.4"
+    typescript: "^6.0.3",
+    vitest: "^4.1.5"
   }
 };
 
