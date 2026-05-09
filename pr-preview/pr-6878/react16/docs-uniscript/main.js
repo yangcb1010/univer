@@ -1,0 +1,67 @@
+import {
+  UniverUniscriptPlugin
+} from "../chunk-GAHTZ6JV.js";
+import "../chunk-GCGI23F5.js";
+import "../chunk-CQY74AWC.js";
+import "../chunk-CLMLYKFF.js";
+import "../chunk-4V6L5VS2.js";
+import {
+  UniverSheetsUIPlugin
+} from "../chunk-YFC4PQJQ.js";
+import {
+  DEFAULT_DOCUMENT_DATA_CN
+} from "../chunk-5Y64OFFG.js";
+import {
+  UniverDocsPlugin,
+  UniverDocsUIPlugin
+} from "../chunk-OYA3IJPL.js";
+import "../chunk-LI6UXASZ.js";
+import {
+  UniverUIPlugin
+} from "../chunk-HA5W7BKS.js";
+import {
+  zh_CN_default
+} from "../chunk-I2PLKRB7.js";
+import "../chunk-VINBWQOG.js";
+import {
+  UniverFormulaEnginePlugin,
+  UniverSheetsPlugin
+} from "../chunk-FDT4RW2X.js";
+import {
+  UniverRenderEnginePlugin
+} from "../chunk-ZTS2ZX44.js";
+import {
+  Univer
+} from "../chunk-NOOMCMF4.js";
+import "../chunk-EQ2B2W73.js";
+import "../chunk-24OICD5T.js";
+
+// src/docs-uniscript/main.ts
+var univer = new Univer({
+  locale: "zhCN" /* ZH_CN */,
+  locales: {
+    ["zhCN" /* ZH_CN */]: zh_CN_default
+  },
+  logLevel: 4 /* VERBOSE */
+});
+univer.registerPlugin(UniverRenderEnginePlugin);
+univer.registerPlugin(UniverFormulaEnginePlugin);
+univer.registerPlugin(UniverUIPlugin, {
+  container: "app",
+  ribbonType: "classic",
+  footer: false
+});
+univer.registerPlugin(UniverDocsPlugin);
+univer.registerPlugin(UniverDocsUIPlugin);
+univer.registerPlugin(UniverSheetsPlugin);
+univer.registerPlugin(UniverSheetsUIPlugin);
+univer.registerPlugin(UniverUniscriptPlugin, {
+  getWorkerUrl(moduleID, label) {
+    if (label === "typescript" || label === "javascript") {
+      return "/vs/language/typescript/ts.worker.js";
+    }
+    return "/vs/editor/editor.worker.js";
+  }
+});
+univer.createUnit(1 /* UNIVER_DOC */, DEFAULT_DOCUMENT_DATA_CN);
+window.univer = univer;
