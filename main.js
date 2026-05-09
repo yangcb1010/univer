@@ -5,11 +5,11 @@ import {
   render,
   require_jsx_runtime,
   require_react
-} from "./chunk-HA5W7BKS.js";
-import "./chunk-ZTS2ZX44.js";
+} from "./chunk-VHHZVIXR.js";
+import "./chunk-YGDGDS4O.js";
 import {
   default_default
-} from "./chunk-NOOMCMF4.js";
+} from "./chunk-P5ZL4OWA.js";
 import "./chunk-EQ2B2W73.js";
 import {
   __toESM
@@ -22,7 +22,7 @@ var import_react = __toESM(require_react());
 var package_default = {
   name: "univer",
   type: "module",
-  version: "0.21.1",
+  version: "0.22.0",
   private: true,
   packageManager: "pnpm@10.33.4",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
@@ -219,11 +219,11 @@ if (true) {
     // eslint-disable-next-line node/prefer-global/process
     NODE_ENV: "production",
     // eslint-disable-next-line node/prefer-global/process
-    GIT_COMMIT_HASH: "e52a2a8",
+    GIT_COMMIT_HASH: "8c87de2",
     // eslint-disable-next-line node/prefer-global/process
-    GIT_REF_NAME: "dev",
+    GIT_REF_NAME: "v0.22.0",
     // eslint-disable-next-line node/prefer-global/process
-    BUILD_TIME: "2026-05-09T07:26:16.242Z"
+    BUILD_TIME: "2026-05-09T10:31:31.220Z"
   });
 }
 function DemoList({ items }) {
