@@ -1,0 +1,8 @@
+import {
+  ko_KR_default
+} from "./chunk-MJYWQROL.js";
+import "./chunk-P5ZL4OWA.js";
+import "./chunk-24OICD5T.js";
+export {
+  ko_KR_default as default
+};
