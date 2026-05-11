@@ -6,11 +6,11 @@ import {
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-KD6DYVT4.js";
+} from "../chunk-PHCF5CC6.js";
 import "../chunk-P6FMB43K.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-4DT6L5QH.js";
+} from "../chunk-BSPWPZWU.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin

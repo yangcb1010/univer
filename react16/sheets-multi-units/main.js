@@ -1,12 +1,12 @@
 import {
   UniverSheetsThreadCommentUIPlugin
-} from "../chunk-7X5H3XB4.js";
+} from "../chunk-YB4CDI7H.js";
 import {
   UniverDocsMentionUIPlugin
 } from "../chunk-TGCYEFNK.js";
 import {
   UniverThreadCommentUIPlugin
-} from "../chunk-KD6DYVT4.js";
+} from "../chunk-PHCF5CC6.js";
 import "../chunk-AG2NX6KG.js";
 import "../chunk-DQGEQMI7.js";
 import {
@@ -193,7 +193,7 @@ setTimeout(() => {
   });
 }, LOAD_LAZY_PLUGINS_TIMEOUT);
 setTimeout(() => {
-  import("../very-lazy-MTFLT554.js").then((lazy) => {
+  import("../very-lazy-66REW2PR.js").then((lazy) => {
     const plugins = lazy.default();
     plugins.forEach((p) => univer.registerPlugin(p[0], p[1]));
   });

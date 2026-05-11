@@ -3,7 +3,7 @@ import {
 } from "../chunk-XZ67ZMA2.js";
 import {
   UniverSheetsThreadCommentUIPlugin
-} from "../chunk-7X5H3XB4.js";
+} from "../chunk-YB4CDI7H.js";
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
@@ -13,7 +13,7 @@ import {
 } from "../chunk-YLBQWPWJ.js";
 import {
   UniverThreadCommentUIPlugin
-} from "../chunk-KD6DYVT4.js";
+} from "../chunk-PHCF5CC6.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
