@@ -10,7 +10,7 @@ import {
 import "../chunk-E26HR755.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-MFTTGWNL.js";
+} from "../chunk-AXLMG65D.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
@@ -2566,8 +2566,10 @@ var DeleteDocCommentComment = {
 
 // ../packages/docs-thread-comment-ui/src/services/doc-thread-comment.service.ts
 var DocThreadCommentService = class extends Disposable {
-  constructor() {
+  constructor(_sidebarService, _threadCommentPanelService) {
     super();
+    __publicField(this, "_sidebarService", _sidebarService);
+    __publicField(this, "_threadCommentPanelService", _threadCommentPanelService);
     __publicField(this, "_addingComment$", new BehaviorSubject(void 0));
     __publicField(this, "addingComment$", this._addingComment$.asObservable());
     this.disposeWithMe(() => {
@@ -2584,6 +2586,10 @@ var DocThreadCommentService = class extends Disposable {
     this._addingComment$.next(void 0);
   }
 };
+DocThreadCommentService = __decorateClass([
+  __decorateParam(0, ISidebarService),
+  __decorateParam(1, Inject(ThreadCommentPanelService))
+], DocThreadCommentService);
 
 // ../packages/docs-thread-comment-ui/src/commands/operations/show-comment-panel.operation.ts
 var ShowCommentPanelOperation = {
