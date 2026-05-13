@@ -29,7 +29,7 @@ import {
   ru_RU_default
 } from "../chunk-DATWDMDV.js";
 import "../chunk-NU4ZBUFX.js";
-import "../chunk-FX4YHPEX.js";
+import "../chunk-KHYAUHWJ.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
@@ -64,7 +64,7 @@ import {
 import "../chunk-QGLG4Z5F.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-Q2S242T5.js";
+} from "../chunk-I7LGT2VH.js";
 import "../chunk-WXB5D4QH.js";
 import "../chunk-RY4YTQP6.js";
 import "../chunk-JHD3FGHB.js";
@@ -74,7 +74,7 @@ import {
 } from "../chunk-YXIXHTFJ.js";
 import {
   UniverSheetsConditionalFormattingPlugin
-} from "../chunk-VKDDI34X.js";
+} from "../chunk-HO74T5W7.js";
 import {
   UniverSheetsFilterPlugin
 } from "../chunk-JRESOMST.js";
@@ -632,13 +632,13 @@ function createNewInstance() {
     univer.createUnit(2 /* UNIVER_SHEET */, DEFAULT_WORKBOOK_DATA_DEMO);
   }
   setTimeout(() => {
-    import("../lazy-QZHYBP6P.js").then((lazy) => {
+    import("../lazy-IUWDYG4L.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-R2IJUCTK.js").then((lazy) => {
+    import("../very-lazy-VJPTWJDG.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
