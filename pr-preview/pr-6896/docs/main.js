@@ -10,7 +10,7 @@ import {
 import "../chunk-VTAWIO4R.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-XWDZ244D.js";
+} from "../chunk-YKKYWOWJ.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
