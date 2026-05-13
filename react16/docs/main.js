@@ -1,38 +1,38 @@
 import {
   UniverDocsMentionUIPlugin
-} from "../chunk-SRHQ4XUJ.js";
+} from "../chunk-TETOLBCW.js";
 import {
   SetActiveCommentOperation,
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-QEC6LHKV.js";
-import "../chunk-MDK5ZEI6.js";
+} from "../chunk-MWGG7JSO.js";
+import "../chunk-DSPQNXJN.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-VFI7VXXJ.js";
+} from "../chunk-EZX7XWMV.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-VVMLFOJ4.js";
+} from "../chunk-AWNKVF6S.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
   ThreadCommentModel,
   getDT
-} from "../chunk-GPI5XZSD.js";
-import "../chunk-U2KL2I6U.js";
+} from "../chunk-CLAY5XOR.js";
+import "../chunk-MQUWI3PU.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-B5QPVCOY.js";
+} from "../chunk-H63KVAT5.js";
 import {
   FUniver
-} from "../chunk-PDNNLBT5.js";
-import "../chunk-HVXVHE75.js";
+} from "../chunk-JA5D6TEX.js";
+import "../chunk-XN7KJFH7.js";
 import {
   DEFAULT_DOCUMENT_DATA_SIMPLE
-} from "../chunk-W2437EUA.js";
+} from "../chunk-2KXMFTFV.js";
 import {
   BulletListCommand,
   CutContentCommand,
@@ -66,7 +66,7 @@ import {
   getAnchorBounding,
   replaceSelectionFactory,
   whenDocAndEditorFocused
-} from "../chunk-5CKYU4JP.js";
+} from "../chunk-B3IMXL4W.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,
@@ -98,20 +98,20 @@ import {
   useDependency,
   useEvent,
   useObservable
-} from "../chunk-42Z66XU2.js";
+} from "../chunk-QIR3WKC6.js";
 import {
   zh_CN_default
-} from "../chunk-RKGAPIWW.js";
-import "../chunk-IKGZZVYA.js";
+} from "../chunk-S573LOWI.js";
+import "../chunk-XNQGS7SY.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-SKIBKGC2.js";
+} from "../chunk-4K3ZX35V.js";
 import {
   IRenderManagerService,
   UniverRenderEnginePlugin,
   ptToPixel,
   withCurrentTypeOfRenderer
-} from "../chunk-JUFDHIGR.js";
+} from "../chunk-VV5VC3U2.js";
 import {
   BehaviorSubject,
   BuildTextUtils,
@@ -147,7 +147,7 @@ import {
   sequenceExecute,
   tap,
   toDisposable
-} from "../chunk-KR7DSM5D.js";
+} from "../chunk-Q4SWDG4I.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
@@ -461,7 +461,7 @@ var package_default2 = {
     "@univerjs/docs-hyper-link": "workspace:*",
     "@univerjs/docs-ui": "workspace:*",
     "@univerjs/engine-render": "workspace:*",
-    "@univerjs/icons": "^1.1.1",
+    "@univerjs/icons": "^1.2.0",
     "@univerjs/ui": "workspace:*"
   },
   devDependencies: {
@@ -2428,7 +2428,7 @@ var package_default3 = {
     "@univerjs/drawing": "workspace:*",
     "@univerjs/drawing-ui": "workspace:*",
     "@univerjs/engine-render": "workspace:*",
-    "@univerjs/icons": "^1.1.1",
+    "@univerjs/icons": "^1.2.0",
     "@univerjs/ui": "workspace:*"
   },
   devDependencies: {
@@ -2773,7 +2773,7 @@ var package_default4 = {
     "@univerjs/docs": "workspace:*",
     "@univerjs/docs-ui": "workspace:*",
     "@univerjs/engine-render": "workspace:*",
-    "@univerjs/icons": "^1.1.1",
+    "@univerjs/icons": "^1.2.0",
     "@univerjs/thread-comment": "workspace:*",
     "@univerjs/thread-comment-ui": "workspace:*",
     "@univerjs/ui": "workspace:*"
