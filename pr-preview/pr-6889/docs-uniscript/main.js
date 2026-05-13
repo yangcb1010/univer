@@ -1,20 +1,20 @@
 import {
   UniverUniscriptPlugin
-} from "../chunk-23GA2EKK.js";
+} from "../chunk-QBRPL3XV.js";
 import "../chunk-GCGI23F5.js";
 import "../chunk-CQY74AWC.js";
 import "../chunk-CLMLYKFF.js";
 import "../chunk-BOFO7FDU.js";
 import {
   UniverSheetsUIPlugin
-} from "../chunk-M6WBLNCB.js";
+} from "../chunk-E43ZV75N.js";
 import {
   DEFAULT_DOCUMENT_DATA_CN
-} from "../chunk-WBQMZFE7.js";
+} from "../chunk-JZRMNKDP.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin
-} from "../chunk-UYZS4ADO.js";
+} from "../chunk-UPJ7ILRO.js";
 import "../chunk-LI6UXASZ.js";
 import {
   UniverUIPlugin
@@ -22,11 +22,11 @@ import {
 import {
   zh_CN_default
 } from "../chunk-OROQCTWB.js";
-import "../chunk-DERQKCKR.js";
+import "../chunk-2VUGZL27.js";
 import {
   UniverFormulaEnginePlugin,
   UniverSheetsPlugin
-} from "../chunk-KLWHM6DN.js";
+} from "../chunk-TTL5RBIZ.js";
 import {
   UniverRenderEnginePlugin
 } from "../chunk-VYDPVHQH.js";
