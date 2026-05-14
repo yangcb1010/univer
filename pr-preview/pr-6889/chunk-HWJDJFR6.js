@@ -865,9 +865,9 @@ function useSnapshot() {
       const doc = univerInstanceService.getCurrentUnitOfType(1 /* UNIVER_DOC */);
       const snapshot2 = resourceLoaderService.saveUnit(doc.getUnitId());
       if (true) {
-        const gitHash = "b7e64fc";
+        const gitHash = "eddd38d";
         const gitBranch = "feat/refactor-formula-engine-dependency-1";
-        const buildTime = "2026-05-14T07:42:00.170Z";
+        const buildTime = "2026-05-14T07:47:35.987Z";
         snapshot2.__env__ = { gitHash, gitBranch, buildTime };
       }
       const text = JSON.stringify(snapshot2, null, 2);
@@ -880,9 +880,9 @@ function useSnapshot() {
     }
     const snapshot = resourceLoaderService.saveUnit(workbook.getUnitId());
     if (true) {
-      const gitHash = "b7e64fc";
+      const gitHash = "eddd38d";
       const gitBranch = "feat/refactor-formula-engine-dependency-1";
-      const buildTime = "2026-05-14T07:42:00.170Z";
+      const buildTime = "2026-05-14T07:47:35.987Z";
       snapshot.__env__ = { gitHash, gitBranch, buildTime };
     }
     if (value === "sheet") {
