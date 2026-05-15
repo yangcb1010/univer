@@ -10,11 +10,11 @@ import {
 import "../chunk-6IECEPET.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-BSIZPG5O.js";
+} from "../chunk-YOUY5R3D.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-MPRIABLT.js";
+} from "../chunk-TSD5Z5BU.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
@@ -25,7 +25,7 @@ import "../chunk-V7DYJCUH.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-PI65WKB7.js";
+} from "../chunk-HYFHTMCY.js";
 import {
   FUniver
 } from "../chunk-UGHNYCJA.js";

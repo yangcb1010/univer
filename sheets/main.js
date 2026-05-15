@@ -29,7 +29,7 @@ import {
   ru_RU_default
 } from "../chunk-ATKV7ERZ.js";
 import "../chunk-SHIZZ34P.js";
-import "../chunk-PORSRBWV.js";
+import "../chunk-UD3G4EFJ.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
@@ -64,11 +64,11 @@ import {
 import "../chunk-6IECEPET.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-Z43JQ6KB.js";
-import "../chunk-MPRIABLT.js";
+} from "../chunk-TUYX3DFJ.js";
+import "../chunk-TSD5Z5BU.js";
 import "../chunk-PRFTVV4D.js";
 import "../chunk-V7DYJCUH.js";
-import "../chunk-PI65WKB7.js";
+import "../chunk-HYFHTMCY.js";
 import {
   FUniver
 } from "../chunk-UGHNYCJA.js";
@@ -152,6 +152,69 @@ import {
   __publicField,
   __toESM
 } from "../chunk-24OICD5T.js";
+
+// src/sheets/custom/custom-float-dom/component.tsx
+var import_jsx_runtime = __toESM(require_jsx_runtime());
+var RangeLoading = () => {
+  const divStyle = {
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#fff",
+    border: "1px solid #ccc",
+    boxSizing: "border-box",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    transformOrigin: "top left"
+  };
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { style: divStyle, children: "Loading..." });
+};
+
+// src/sheets/custom/custom-float-dom/float-dom.ts
+function insertFloatDom(univer, univerAPI) {
+  univerAPI.addEvent(univerAPI.Event.LifeCycleChanged, ({ stage }) => {
+    if (stage === univerAPI.Enum.LifecycleStages.Steady) {
+      univerAPI.registerComponent("RangeLoading", RangeLoading);
+      const fWorkbook = univerAPI.getActiveWorkbook();
+      const fWorksheet = fWorkbook.getActiveSheet();
+      const fRange = fWorksheet.getRange("A1:C3");
+      const disposable = fWorksheet.addFloatDomToRange(fRange, { componentKey: "RangeLoading" }, {}, "myRangeLoading");
+      console.warn("Float DOM", disposable);
+    }
+  });
+}
+
+// src/sheets/custom/custom-range-popup/simple-range-popup.tsx
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+function simpleRangePopupDemo(univer, univerAPI) {
+  univerAPI.registerComponent("MySimplePopup", () => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+    "div",
+    {
+      style: {
+        padding: "8px",
+        background: "white",
+        border: "1px solid #ccc",
+        borderRadius: "4px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+        color: "#333"
+      },
+      children: "Hello from Range Popup!"
+    }
+  ));
+  univerAPI.addEvent(univerAPI.Event.LifeCycleChanged, (params) => {
+    if (params.stage === 2 /* Rendered */) {
+      const workbook = univerAPI.getActiveWorkbook();
+      const worksheet = workbook.getActiveSheet();
+      const range = worksheet.getRange("B2:D100");
+      range.attachRangePopup({
+        componentKey: "MySimplePopup",
+        direction: "right-bottom",
+        offset: [0, 10]
+      });
+    }
+  });
+}
 
 // src/sheets/custom/custom-register-event.ts
 function customRegisterEvent(univer, univerAPI) {
@@ -515,37 +578,6 @@ ImportCSVButtonPlugin = __decorateClass([
 ], ImportCSVButtonPlugin);
 var import_csv_button_default = ImportCSVButtonPlugin;
 
-// src/sheets/custom/simple-range-popup.tsx
-var import_jsx_runtime = __toESM(require_jsx_runtime());
-function simpleRangePopupDemo(univer, univerAPI) {
-  univerAPI.registerComponent("MySimplePopup", () => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-    "div",
-    {
-      style: {
-        padding: "8px",
-        background: "white",
-        border: "1px solid #ccc",
-        borderRadius: "4px",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-        color: "#333"
-      },
-      children: "Hello from Range Popup!"
-    }
-  ));
-  univerAPI.addEvent(univerAPI.Event.LifeCycleChanged, (params) => {
-    if (params.stage === 2 /* Rendered */) {
-      const workbook = univerAPI.getActiveWorkbook();
-      const worksheet = workbook.getActiveSheet();
-      const range = worksheet.getRange("B2:D100");
-      range.attachRangePopup({
-        componentKey: "MySimplePopup",
-        direction: "right-bottom",
-        offset: [0, 10]
-      });
-    }
-  });
-}
-
 // src/sheets/main.ts
 var IS_E2E = false;
 var LOAD_LAZY_PLUGINS_TIMEOUT = 50;
@@ -632,13 +664,13 @@ function createNewInstance() {
     univer.createUnit(2 /* UNIVER_SHEET */, DEFAULT_WORKBOOK_DATA_DEMO);
   }
   setTimeout(() => {
-    import("../lazy-PPWNHICT.js").then((lazy) => {
+    import("../lazy-OEN4S7FE.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-SHRSGXBP.js").then((lazy) => {
+    import("../very-lazy-3SCY6FFR.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
@@ -652,6 +684,7 @@ function createNewInstance() {
   window.univerAPI = FUniver.newAPI(univer);
   customRegisterEvent(univer, window.univerAPI);
   simpleRangePopupDemo(univer, window.univerAPI);
+  insertFloatDom(univer, window.univerAPI);
 }
 createNewInstance();
 window.createNewInstance = createNewInstance;
