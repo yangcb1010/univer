@@ -28,8 +28,8 @@ import {
 import {
   ru_RU_default
 } from "../chunk-ATKV7ERZ.js";
-import "../chunk-LWPBAWNN.js";
-import "../chunk-G3GQSTC3.js";
+import "../chunk-SHIZZ34P.js";
+import "../chunk-PORSRBWV.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
@@ -41,7 +41,7 @@ import "../chunk-AUVDOZOG.js";
 import {
   UniverSheetsThreadCommentPlugin
 } from "../chunk-PNQCNENW.js";
-import "../chunk-MJCXZZPX.js";
+import "../chunk-FXRFQZIZ.js";
 import {
   en_US_default
 } from "../chunk-NDEWWXP4.js";
@@ -54,21 +54,21 @@ import {
 } from "../chunk-E3KUG4MU.js";
 import {
   UniverSheetsZenEditorPlugin
-} from "../chunk-M7LSZIKF.js";
+} from "../chunk-6WCGUON5.js";
 import {
   UniverSheetsHyperLinkPlugin
-} from "../chunk-BQEZHOEI.js";
+} from "../chunk-KB3VM7CV.js";
 import {
   UniverSheetsSortPlugin
 } from "../chunk-2XYIL5ZN.js";
-import "../chunk-C5USZYTF.js";
+import "../chunk-6IECEPET.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-CM3ATAON.js";
-import "../chunk-5LZXVWXX.js";
+} from "../chunk-BSIZPG5O.js";
+import "../chunk-MPRIABLT.js";
 import "../chunk-PRFTVV4D.js";
 import "../chunk-V7DYJCUH.js";
-import "../chunk-VPDFLD3G.js";
+import "../chunk-PI65WKB7.js";
 import {
   FUniver
 } from "../chunk-UGHNYCJA.js";
@@ -78,22 +78,22 @@ import {
 import {
   UniverSheetsFilterPlugin
 } from "../chunk-SMSEC6NP.js";
-import "../chunk-E2NDH4FI.js";
+import "../chunk-I3KEH2JS.js";
 import {
   UniverSheetsNumfmtPlugin
 } from "../chunk-CWZ674DL.js";
 import {
   UniverSheetsUIPlugin,
   whenSheetEditorFocused
-} from "../chunk-CZ2URNVR.js";
+} from "../chunk-YTGTDE7T.js";
 import {
   DEFAULT_WORKBOOK_DATA_DEMO
-} from "../chunk-H6IYE7SK.js";
+} from "../chunk-L4AQKQKU.js";
 import {
   UniverDocsPlugin,
   UniverDocsUIPlugin,
   UniverSheetsDataValidationPlugin
-} from "../chunk-MZFSBPQN.js";
+} from "../chunk-PUATED7W.js";
 import "../chunk-LI6UXASZ.js";
 import {
   ComponentManager,
@@ -109,7 +109,7 @@ import {
 } from "../chunk-QDQXZY2J.js";
 import {
   UniverSheetsFormulaPlugin
-} from "../chunk-3UYALPPF.js";
+} from "../chunk-B4JD6PHF.js";
 import {
   ClearSelectionContentCommand,
   RemoveColByRangeCommand,
@@ -632,13 +632,13 @@ function createNewInstance() {
     univer.createUnit(2 /* UNIVER_SHEET */, DEFAULT_WORKBOOK_DATA_DEMO);
   }
   setTimeout(() => {
-    import("../lazy-ZRDLZXKS.js").then((lazy) => {
+    import("../lazy-PPWNHICT.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-4EAS7ADI.js").then((lazy) => {
+    import("../very-lazy-DWPVIXQD.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });

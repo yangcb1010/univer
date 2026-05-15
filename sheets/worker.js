@@ -6,7 +6,7 @@ import {
 } from "../chunk-QDQXZY2J.js";
 import {
   UniverRemoteSheetsFormulaPlugin
-} from "../chunk-3UYALPPF.js";
+} from "../chunk-B4JD6PHF.js";
 import {
   UniverFormulaEnginePlugin,
   UniverRPCWorkerThreadPlugin,
