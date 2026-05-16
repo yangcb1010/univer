@@ -5460,7 +5460,7 @@ var FFormulaSheetsMixin = class extends FFormula {
       if (command.id === SetFormulaCalculationResultMutation.id) {
         setFormulaCalculationResult = true;
         result = command.params;
-        applyFormulaCalculationResult = !this._hasFormulaResultToApply(result);
+        applyFormulaCalculationResult = applyFormulaCalculationResult || !this._hasFormulaResultToApply(result);
       }
       if (command.id === SetRangeValuesMutation.id && (options == null ? void 0 : options.applyFormulaCalculationResult)) {
         applyFormulaCalculationResult = true;

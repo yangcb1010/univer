@@ -7,7 +7,7 @@ import {
 import {
   UniverThreadCommentUIPlugin
 } from "../chunk-OGYP2EFO.js";
-import "../chunk-KH3YKFMQ.js";
+import "../chunk-OM47WXVJ.js";
 import "../chunk-SNTZLSBX.js";
 import {
   UniverSheetsThreadCommentPlugin
@@ -193,7 +193,7 @@ setTimeout(() => {
   });
 }, LOAD_LAZY_PLUGINS_TIMEOUT);
 setTimeout(() => {
-  import("../very-lazy-EZE7ZFET.js").then((lazy) => {
+  import("../very-lazy-GYK32PWH.js").then((lazy) => {
     const plugins = lazy.default();
     plugins.forEach((p) => univer.registerPlugin(p[0], p[1]));
   });

@@ -29,7 +29,7 @@ import {
   ru_RU_default
 } from "../chunk-ATKV7ERZ.js";
 import "../chunk-ZYFV2WZU.js";
-import "../chunk-KH3YKFMQ.js";
+import "../chunk-OM47WXVJ.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
@@ -64,7 +64,7 @@ import {
 import "../chunk-CXY2DPSU.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-FTH76HQB.js";
+} from "../chunk-F26NGWHH.js";
 import "../chunk-JZBPKP3E.js";
 import "../chunk-PRFTVV4D.js";
 import "../chunk-Y76YBDLM.js";
@@ -670,7 +670,7 @@ function createNewInstance() {
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-O6TBKJDP.js").then((lazy) => {
+    import("../very-lazy-MBTYZSCG.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });
