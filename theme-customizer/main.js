@@ -29,10 +29,10 @@ import {
   UniverSheetsConditionalFormattingUIPlugin,
   UniverSheetsDataValidationUIPlugin,
   UniverSheetsFilterUIPlugin
-} from "../chunk-B2BCQXK3.js";
+} from "../chunk-3DRTTD6V.js";
 import {
   UniverSheetsConditionalFormattingPlugin
-} from "../chunk-7IHINFI2.js";
+} from "../chunk-FLXPMU6R.js";
 import {
   UniverSheetsFilterPlugin
 } from "../chunk-TNXMV7TV.js";

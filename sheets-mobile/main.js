@@ -2,8 +2,8 @@ import {
   UniverSheetsConditionalFormattingMobileUIPlugin,
   UniverSheetsDataValidationMobileUIPlugin,
   UniverSheetsFilterMobileUIPlugin
-} from "../chunk-B2BCQXK3.js";
-import "../chunk-7IHINFI2.js";
+} from "../chunk-3DRTTD6V.js";
+import "../chunk-FLXPMU6R.js";
 import {
   UniverSheetsFilterPlugin
 } from "../chunk-TNXMV7TV.js";
