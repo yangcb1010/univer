@@ -28,8 +28,8 @@ import {
 import {
   ru_RU_default
 } from "../chunk-E5SKU46I.js";
-import "../chunk-F5DH5Q5B.js";
-import "../chunk-PQLDMBGX.js";
+import "../chunk-T2VXZOU5.js";
+import "../chunk-JEBA7SDC.js";
 import {
   UniverVue3AdapterPlugin,
   UniverWebComponentAdapterPlugin
@@ -37,7 +37,7 @@ import {
 import {
   UniverNetworkPlugin
 } from "../chunk-2CPQQN7S.js";
-import "../chunk-HRJFR5X2.js";
+import "../chunk-E6IXAIIJ.js";
 import {
   UniverSheetsThreadCommentPlugin
 } from "../chunk-VQZ46PU7.js";
@@ -64,7 +64,7 @@ import {
 import "../chunk-J2FASIC6.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-L4DRTO5Y.js";
+} from "../chunk-7OVWN4YC.js";
 import "../chunk-NTTIBKPO.js";
 import "../chunk-2XEKRIDD.js";
 import "../chunk-TXJUECTM.js";
@@ -670,7 +670,7 @@ function createNewInstance() {
     });
   }, LOAD_LAZY_PLUGINS_TIMEOUT);
   setTimeout(() => {
-    import("../very-lazy-GFSPBXYG.js").then((lazy) => {
+    import("../very-lazy-YAOIEJ4N.js").then((lazy) => {
       const plugins = lazy.default();
       univer.registerPlugins(plugins);
     });

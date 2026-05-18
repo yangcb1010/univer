@@ -7,8 +7,8 @@ import {
 import {
   UniverThreadCommentUIPlugin
 } from "../chunk-44KKEGQG.js";
-import "../chunk-PQLDMBGX.js";
-import "../chunk-HRJFR5X2.js";
+import "../chunk-JEBA7SDC.js";
+import "../chunk-E6IXAIIJ.js";
 import {
   UniverSheetsThreadCommentPlugin
 } from "../chunk-VQZ46PU7.js";
@@ -193,7 +193,7 @@ setTimeout(() => {
   });
 }, LOAD_LAZY_PLUGINS_TIMEOUT);
 setTimeout(() => {
-  import("../very-lazy-4KWEWB76.js").then((lazy) => {
+  import("../very-lazy-UVONGGXN.js").then((lazy) => {
     const plugins = lazy.default();
     plugins.forEach((p) => univer.registerPlugin(p[0], p[1]));
   });
