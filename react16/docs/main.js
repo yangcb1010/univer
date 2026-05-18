@@ -1,38 +1,38 @@
 import {
   UniverDocsMentionUIPlugin
-} from "../chunk-UPY6WOOU.js";
+} from "../chunk-X3KG5YDO.js";
 import {
   SetActiveCommentOperation,
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-YQNWSYQS.js";
-import "../chunk-3LT4O3HX.js";
+} from "../chunk-TRYJDTXH.js";
+import "../chunk-G54TJO45.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-WX5VQPWL.js";
+} from "../chunk-5NZLHHMI.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-U7TUOMQO.js";
+} from "../chunk-BXCTMGIO.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
   ThreadCommentModel,
   getDT
-} from "../chunk-OTQCICTT.js";
-import "../chunk-332B56TT.js";
+} from "../chunk-2XEKRIDD.js";
+import "../chunk-TXJUECTM.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-T75JOL66.js";
+} from "../chunk-WWHMDQ7K.js";
 import {
   FUniver
-} from "../chunk-H55CPTS3.js";
-import "../chunk-KD2LLJI4.js";
+} from "../chunk-NR63F572.js";
+import "../chunk-MKNCJBDE.js";
 import {
   DEFAULT_DOCUMENT_DATA_SIMPLE
-} from "../chunk-HLJLUWZJ.js";
+} from "../chunk-XDCXQCNH.js";
 import {
   BulletListCommand,
   CutContentCommand,
@@ -66,7 +66,7 @@ import {
   getAnchorBounding,
   replaceSelectionFactory,
   whenDocAndEditorFocused
-} from "../chunk-QG2VHHOO.js";
+} from "../chunk-FTAI5ZF2.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,
@@ -98,20 +98,20 @@ import {
   useDependency,
   useEvent,
   useObservable
-} from "../chunk-VIG6WRQC.js";
+} from "../chunk-EZ6MMOBL.js";
 import {
   zh_CN_default
-} from "../chunk-AFUFHWQX.js";
-import "../chunk-YFEMWLGB.js";
+} from "../chunk-K7UR5GWZ.js";
+import "../chunk-HRTBLBUG.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-L7B5QXL4.js";
+} from "../chunk-2PCWRLMN.js";
 import {
   IRenderManagerService,
   UniverRenderEnginePlugin,
   ptToPixel,
   withCurrentTypeOfRenderer
-} from "../chunk-44TTLR7G.js";
+} from "../chunk-IM3D4YJX.js";
 import {
   BehaviorSubject,
   BuildTextUtils,
@@ -147,7 +147,7 @@ import {
   sequenceExecute,
   tap,
   toDisposable
-} from "../chunk-Z7OGNYY7.js";
+} from "../chunk-LHKDD2S2.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
@@ -159,7 +159,7 @@ import {
 // ../packages/docs-hyper-link/package.json
 var package_default = {
   name: "@univerjs/docs-hyper-link",
-  version: "0.22.1",
+  version: "0.23.0",
   private: false,
   description: "Hyperlink model and commands for Univer Docs.",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
@@ -381,7 +381,7 @@ UniverDocsHyperLinkPlugin = __decorateClass([
 // ../packages/docs-hyper-link-ui/package.json
 var package_default2 = {
   name: "@univerjs/docs-hyper-link-ui",
-  version: "0.22.1",
+  version: "0.23.0",
   private: false,
   description: "Hyperlink editing UI for Univer Docs.",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
@@ -2345,7 +2345,7 @@ DocQuickInsertUIController = __decorateClass([
 // ../packages/docs-quick-insert-ui/package.json
 var package_default3 = {
   name: "@univerjs/docs-quick-insert-ui",
-  version: "0.22.1",
+  version: "0.23.0",
   private: false,
   description: "Quick insert UI integration for Univer Docs.",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
@@ -2701,7 +2701,7 @@ var StartAddCommentOperation = {
 // ../packages/docs-thread-comment-ui/package.json
 var package_default4 = {
   name: "@univerjs/docs-thread-comment-ui",
-  version: "0.22.1",
+  version: "0.23.0",
   private: false,
   description: "Thread comment UI integration for Univer Docs.",
   author: "DreamNum Co., Ltd. <developer@univer.ai>",
