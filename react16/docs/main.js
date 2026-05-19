@@ -1,38 +1,38 @@
 import {
   UniverDocsMentionUIPlugin
-} from "../chunk-NA6VTIFD.js";
+} from "../chunk-VHOETFV3.js";
 import {
   SetActiveCommentOperation,
   ThreadCommentPanel,
   ThreadCommentPanelService,
   UniverThreadCommentUIPlugin
-} from "../chunk-H7KFVZOA.js";
-import "../chunk-AGTZPJXU.js";
+} from "../chunk-JAO7RAZ6.js";
+import "../chunk-SOTD7ILT.js";
 import {
   UniverDebuggerPlugin
-} from "../chunk-QI5IA5UW.js";
+} from "../chunk-MA77KOWU.js";
 import {
   InsertDocImageCommand,
   UniverDocsDrawingUIPlugin
-} from "../chunk-5QLH6JSG.js";
+} from "../chunk-W6HWXYUN.js";
 import {
   AddCommentMutation,
   IThreadCommentDataSourceService,
   ThreadCommentModel,
   getDT
-} from "../chunk-2XEKRIDD.js";
-import "../chunk-G2OFSE5X.js";
+} from "../chunk-PYSVIXUP.js";
+import "../chunk-MEK4W47U.js";
 import {
   UniverDocsDrawingPlugin,
   UniverDrawingUIPlugin
-} from "../chunk-5TK3W4BY.js";
+} from "../chunk-JJQOXDSP.js";
 import {
   FUniver
-} from "../chunk-NR63F572.js";
-import "../chunk-IMLRFAXE.js";
+} from "../chunk-PTH4ZFW6.js";
+import "../chunk-PAQGC7OS.js";
 import {
   DEFAULT_DOCUMENT_DATA_SIMPLE
-} from "../chunk-OMKOVUMP.js";
+} from "../chunk-2BPF3MDK.js";
 import {
   BulletListCommand,
   CutContentCommand,
@@ -66,7 +66,7 @@ import {
   getAnchorBounding,
   replaceSelectionFactory,
   whenDocAndEditorFocused
-} from "../chunk-ZDQQONQ3.js";
+} from "../chunk-QXWAJ3Q5.js";
 import "../chunk-LI6UXASZ.js";
 import {
   Button,
@@ -98,20 +98,20 @@ import {
   useDependency,
   useEvent,
   useObservable
-} from "../chunk-DB2U2UP3.js";
+} from "../chunk-CB54O66K.js";
 import {
   zh_CN_default
-} from "../chunk-K7UR5GWZ.js";
-import "../chunk-P2XSJLFS.js";
+} from "../chunk-CF3BOM2J.js";
+import "../chunk-VTJS4LWT.js";
 import {
   UniverFormulaEnginePlugin
-} from "../chunk-VX3DYZ3K.js";
+} from "../chunk-WRUL4T3Z.js";
 import {
   IRenderManagerService,
   UniverRenderEnginePlugin,
   ptToPixel,
   withCurrentTypeOfRenderer
-} from "../chunk-TTDHTKZ5.js";
+} from "../chunk-KRIGFYA2.js";
 import {
   BehaviorSubject,
   BuildTextUtils,
@@ -147,7 +147,7 @@ import {
   sequenceExecute,
   tap,
   toDisposable
-} from "../chunk-LHKDD2S2.js";
+} from "../chunk-QXSHBFLW.js";
 import "../chunk-EQ2B2W73.js";
 import {
   __decorateClass,
