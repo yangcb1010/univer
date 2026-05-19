@@ -4,7 +4,7 @@ import {
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
-} from "./chunk-I7MIWEXM.js";
+} from "./chunk-U5RLBCWJ.js";
 import {
   UniverDocsMentionUIPlugin
 } from "./chunk-VHOETFV3.js";
@@ -45,7 +45,7 @@ import "./chunk-QXSHBFLW.js";
 import "./chunk-EQ2B2W73.js";
 import "./chunk-24OICD5T.js";
 
-// src/sheets-no-worker/lazy.ts
+// src/sheets/lazy.ts
 function getLazyPlugins() {
   return [
     [UniverDocsDrawingUIPlugin],

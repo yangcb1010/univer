@@ -3091,7 +3091,7 @@ var SheetTableControlsRenderController = class extends Disposable {
     };
   }
   _syncTopTableGap(skeleton) {
-    var _a, _b, _c;
+    var _a;
     const worksheet = this._context.unit.getActiveSheet();
     if (!worksheet) {
       return;
@@ -3100,7 +3100,7 @@ var SheetTableControlsRenderController = class extends Disposable {
     const subUnitId = worksheet.getSheetId();
     const hasTopTable = this._tableManager.getTablesBySubunitId(unitId, subUnitId).some((table) => table.getRange().startRow === 0);
     const current = skeleton.gapConfig;
-    const rowGaps = { ...(_a = current.rowGaps) != null ? _a : {} };
+    const rowGaps = { ...current.rowGaps };
     const previousTopGap = rowGaps[TABLE_CONTROL_GAP_ROW] ? { ...rowGaps[TABLE_CONTROL_GAP_ROW] } : null;
     let shouldSync = false;
     if (hasTopTable) {
@@ -3112,8 +3112,8 @@ var SheetTableControlsRenderController = class extends Disposable {
       }
       const baseGap = this._topGapBaseBySkeleton.get(skeleton);
       rowGaps[TABLE_CONTROL_GAP_ROW] = {
-        ...(_b = baseGap != null ? baseGap : rowGaps[TABLE_CONTROL_GAP_ROW]) != null ? _b : {},
-        size: ((_c = baseGap == null ? void 0 : baseGap.size) != null ? _c : 0) + TABLE_CONTROL_TOP_GAP_SIZE
+        ...baseGap != null ? baseGap : rowGaps[TABLE_CONTROL_GAP_ROW],
+        size: ((_a = baseGap == null ? void 0 : baseGap.size) != null ? _a : 0) + TABLE_CONTROL_TOP_GAP_SIZE
       };
       shouldSync = true;
     } else if (this._topGapBaseBySkeleton.has(skeleton)) {

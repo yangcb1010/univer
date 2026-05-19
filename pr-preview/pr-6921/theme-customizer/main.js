@@ -1,7 +1,7 @@
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
-} from "../chunk-I7MIWEXM.js";
+} from "../chunk-U5RLBCWJ.js";
 import {
   UniverSheetsSortUIPlugin
 } from "../chunk-3IQZT3O6.js";
