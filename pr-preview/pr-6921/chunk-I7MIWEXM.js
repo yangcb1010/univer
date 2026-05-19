@@ -2067,45 +2067,51 @@ function SheetTableFilterPanel() {
       className: `univer-box-border univer-flex univer-min-w-[312px] univer-flex-col univer-rounded-[10px] univer-bg-white univer-p-4 univer-shadow-lg dark:!univer-border-gray-600 dark:!univer-bg-gray-700`,
       children: [
         editable && /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(import_jsx_runtime4.Fragment, { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "-univer-mx-4 -univer-mt-2 univer-mb-3 univer-border-0 univer-border-b univer-border-solid univer-border-gray-200 univer-py-1", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
-              "button",
-              {
-                type: "button",
-                className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
-                onClick: () => insertColumn("left"),
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(LeftInsertColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.insert-left") })
-                ]
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
-              "button",
-              {
-                type: "button",
-                className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
-                onClick: () => insertColumn("right"),
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(RightInsertColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.insert-right") })
-                ]
-              }
-            ),
-            /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
-              "button",
-              {
-                type: "button",
-                className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
-                disabled: !canDeleteColumn,
-                onClick: deleteColumn,
-                children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(DeleteColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
-                  /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.delete") })
-                ]
-              }
-            )
-          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+            "div",
+            {
+              className: `-univer-mx-4 -univer-mt-2 univer-mb-3 univer-border-0 univer-border-b univer-border-solid univer-border-gray-200 univer-py-1`,
+              children: [
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+                  "button",
+                  {
+                    type: "button",
+                    className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
+                    onClick: () => insertColumn("left"),
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(LeftInsertColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.insert-left") })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+                  "button",
+                  {
+                    type: "button",
+                    className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
+                    onClick: () => insertColumn("right"),
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(RightInsertColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.insert-right") })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(
+                  "button",
+                  {
+                    type: "button",
+                    className: `univer-box-border univer-flex univer-h-10 univer-w-full univer-cursor-pointer univer-items-center univer-gap-3 univer-border-none univer-bg-transparent univer-px-4 univer-text-left univer-text-sm univer-text-gray-900 hover:univer-bg-gray-100 disabled:univer-cursor-not-allowed disabled:univer-text-gray-400 dark:!univer-text-white dark:hover:!univer-bg-gray-600`,
+                    disabled: !canDeleteColumn,
+                    onClick: deleteColumn,
+                    children: [
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(DeleteColumnDoubleIcon, { className: "univer-size-5", extend: { colorChannel1: "var(--univer-primary-600)" } }),
+                      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { children: localeService.t("sheets-table.columnMenu.delete") })
+                    ]
+                  }
+                )
+              ]
+            }
+          ),
           /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "univer-mb-3 univer-flex", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(ButtonGroup, { className: "univer-mb-3 !univer-flex univer-w-full", children: [
             /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)(Button, { className: "univer-w-1/2", onClick: () => applySort(true), children: [
               /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(AscendingIcon, { className: "univer-mr-1" }),
@@ -2224,31 +2230,37 @@ function SheetTableRenameDialog(props) {
     });
     onClose();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "univer-box-border univer-flex univer-w-full univer-flex-col univer-gap-4 univer-pb-3 univer-pt-2", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
-      Input,
-      {
-        size: "middle",
-        value,
-        placeholder: localeService.t("sheets-table.renamePlaceholder"),
-        onChange: (nextValue) => {
-          setValue(nextValue);
-          setError("");
-        },
-        onKeyDown: (event) => {
-          if (event.key === "Enter") {
-            handleConfirm();
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(
+    "div",
+    {
+      className: `univer-box-border univer-flex univer-w-full univer-flex-col univer-gap-4 univer-pb-3 univer-pt-2`,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+          Input,
+          {
+            size: "middle",
+            value,
+            placeholder: localeService.t("sheets-table.renamePlaceholder"),
+            onChange: (nextValue) => {
+              setValue(nextValue);
+              setError("");
+            },
+            onKeyDown: (event) => {
+              if (event.key === "Enter") {
+                handleConfirm();
+              }
+            },
+            autoFocus: true
           }
-        },
-        autoFocus: true
-      }
-    ),
-    error ? /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "-univer-mt-2 univer-text-sm univer-text-red-500", children: error }) : null,
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "univer-flex univer-w-full univer-items-center univer-justify-end univer-gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Button, { className: "univer-min-w-16", onClick: onClose, children: localeService.t("sheets-table.cancel") }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Button, { className: "univer-min-w-16", variant: "primary", onClick: handleConfirm, children: localeService.t("sheets-table.confirm") })
-    ] })
-  ] });
+        ),
+        error ? /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "-univer-mt-2 univer-text-sm univer-text-red-500", children: error }) : null,
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "univer-flex univer-w-full univer-items-center univer-justify-end univer-gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Button, { className: "univer-min-w-16", onClick: onClose, children: localeService.t("sheets-table.cancel") }),
+          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(Button, { className: "univer-min-w-16", variant: "primary", onClick: handleConfirm, children: localeService.t("sheets-table.confirm") })
+        ] })
+      ]
+    }
+  );
 }
 
 // ../packages/sheets-table-ui/src/controllers/sheet-table-component.controller.ts

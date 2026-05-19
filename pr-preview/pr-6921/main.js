@@ -219,11 +219,11 @@ if (true) {
     // eslint-disable-next-line node/prefer-global/process
     NODE_ENV: "production",
     // eslint-disable-next-line node/prefer-global/process
-    GIT_COMMIT_HASH: "b1bb910",
+    GIT_COMMIT_HASH: "b5c5209",
     // eslint-disable-next-line node/prefer-global/process
     GIT_REF_NAME: "feat/refactor-table-ui",
     // eslint-disable-next-line node/prefer-global/process
-    BUILD_TIME: "2026-05-19T08:55:22.376Z"
+    BUILD_TIME: "2026-05-19T09:06:07.040Z"
   });
 }
 function DemoList({ items }) {

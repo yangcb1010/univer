@@ -4,7 +4,7 @@ import {
 import {
   UniverSheetsNoteUIPlugin,
   UniverSheetsTableUIPlugin
-} from "./chunk-ZT2JQVO5.js";
+} from "./chunk-I7MIWEXM.js";
 import {
   UniverDocsMentionUIPlugin
 } from "./chunk-VHOETFV3.js";
